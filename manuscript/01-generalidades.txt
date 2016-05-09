@@ -1,35 +1,3 @@
-# Ideas Claras de Javascript
-
-JavaScript es un [lenguaje de programación interpretado](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) por lo que no es necesario compilar los programas para ejecutarlos  
-
-Según una [separacion en 3 capas de la pagina web](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), con el Javascript controlariamos [la capa](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/) del comportamiento:  
-
-* Contenido → HTML  
-* Presentacion → CSS  
-* Comportamiento → Javascript  
-
-[Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) (o Ecma-262) que es una especificación de lenguaje de programacion (otro lenguaje "famoso" basado en este standard es _ActionScript_).  
-
-Las [diferentes revisiones del Ecma-262](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) y su [implementacion en los navegadores](http://kangax.github.io/compat-table/es5/) han ido marcando los desarrollos en Javascript
-
-Con [la llegada de AJAX](http://www.uberbin.net/archivos/internet/ajax-un-nuevo-acercamiento-a-aplicaciones-web.php) (que no es más que el uso de un objeto javascript con el que podemos interactuar con el servidor sin tener que forzar una recarga de página) se abrió una nueva era en la historia del lenguaje
-
-El uso tradicional de Javascript ha sido en el browser, pero [ya](http://www.youtube.com/watch?v=F6k8lTrAE2g) [se](http://clintberry.com/2013/html5-apps-desktop-2013/) [ha](http://www.hongkiat.com/blog/mobile-frameworks/) extendido [su uso tambien en el lado del servidor](http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-node-js/) ([Node.js](http://nodejs.org/)), en [aplicaciones desktop](https://nodesource.com/blog/node-desktop-applications) y en [aplicaciones mobile](http://phonegap.com/) 
-
-Hay diferencias entre los navegadores debido al uso de [diferentes motores de Javascript](http://www.etnassoft.com/2011/05/31/comparativa-entre-los-distintos-motores-ecmascript/). Algunos de ellos son:
-
-* Chrome → V8
-* Firefox 4 → JagerMonkey
-* Opera 10 → Carakan
-* Safari → Nitro
-* Internet Explorer 9 → Chakra
-
-T> Aunque la diferencia grande siempre ha estado entre Internet Explorer y el resto (hasta IE9)
-
-Estos interpretes ([motores](http://en.wikipedia.org/wiki/JavaScript_engine#JavaScript_engines)) de JS que hay en cada navegador, realizan optimizaciones de código cada uno a su manera de ahí el diferente [rendimiento](http://jsperf.com/browse) entre navegadores
-
-Un [Framework](http://www.desarrolloweb.com/articulos/listado-distintos-framework-javascript.html) (o libreria) es una coleccion de utilidades comunmente utilizadas que pueden ser utilizadas para desarrollar aplicaciones ahorrando tiempo y esfuerzo. El framework mas conocido y utilizado es [jQuery](https://jquery.com/).
-
 # Breve historia de Javascript
 
 ![JS History 1](images/js-history-1.png)
@@ -58,7 +26,7 @@ En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las d
 
 En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La [edicion 5.1](http://www.ecma-international.org/ecma-262/5.1/) se libera en 2011
 
-En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
+En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o ECMAScript 6. Se lanza oficialmente bajo el nombre de [ECMAScript 2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) en Junio de 2015
 
 #ECMAScript
 
@@ -184,16 +152,21 @@ With [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 Añade (respecto del standard anterior): `do-while`, expresiones regulares, nuevos metodos de `string` (`concat`, `match`, `replace`, `slice` , `split` con expresiones regulares, etc.), manejo de excepciones y más. 
 
-## EcmaScript 6
+## EcmaScript 2015
 
-[ECMAScript 6](https://people.mozilla.org/~jorendorff/es6-draft.html) será el proximo standard de Javascript pero [aun no está lo suficientemente implantado](http://kangax.github.io/compat-table/es6/) en los navegadores mas utilizados.
+[ECMAScript 2015](https://people.mozilla.org/~jorendorff/es6-draft.html) (tambión conocido como ECMAScript 6 o ES6 ) será el proximo standard de Javascript pero [aun no está lo suficientemente implantado](http://kangax.github.io/compat-table/es6/) en los navegadores mas utilizados.
 
 A> → [Learn ES6 | A detailed overview of ECMAScript 6 features](https://6to5.org/docs/tour/)    
 A> → [ECMAScript 6 Learning! (Eric Douglas Github)](https://github.com/ericdouglas/ES6-Learning)    
 A> → [ES6 Rocks | A collaborative website about the ECMAScript sixth edition, a.k.a. ES6.](http://es6rocks.com/)    
 A> → [Use ECMAScript 6 Today (tutsplus.com) ](http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582)    
 
-Aunque podemos dar soporte de estas features de ES6 en navegadores que no las soporten utilizando el correspondiente [shim](https://github.com/paulmillr/es6-shim/)
+Aunque podemos utilizar ES2015 en nuestros proyectos desde hoy mismo si:
+
+- damos soporte de estas features de ES2015 en navegadores que no las soporten utilizando el correspondiente [shim](https://github.com/paulmillr/es6-shim/)
+
+- [transformamos el código a ES5](http://www.barbarianmeetscoding.com/blog/2016/02/21/start-using-es6-es2015-in-your-project-with-babel-and-gulp/) mediante un proceso de transpilacion (transformación de un tipo de código a otro tipo de código)
+
 
 
 

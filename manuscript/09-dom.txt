@@ -1,25 +1,5 @@
 # DOM
 
-El **[DOM (Document Object Model)](http://www.w3.org/DOM/)** es una forma de representar un documento HTML (o XML) como un árbol de nodos.  
-Utilizando los métodos y propiedades del DOM podremos acceder a los elementos de la página, modificarlo, eliminarlos o añadir nuevos
-
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/
-xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title>Página sencilla</title>
-    </head>
-    <body>
-        <p>Esta página es <strong>muy sencilla</strong></p>
-    </body>
-</html>
-```
-
-![DOM](images/dom.png)
-
 En el _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ se diferencia entre: 
 
 - El **Core DOM** es la especificación común que se aplica a todos los documentos (XML, HTML,…)
@@ -303,27 +283,11 @@ Podemos acceder a los elementos del form (inputs, buttons) con elements
 >>> document.forms[0].elements.search; // object property
 ```
 
-Tambien tenemos disponible el método [`document.write()`](https://developer.mozilla.org/en/document.write)   
-No se recomienda su uso ;-)
-
-Algunas propiedades del objeto document son:
-
-- `document.cookies`: Contiene una cadena de texto con las cookies asociadas al documento
-- [`document.title`](https://developer.mozilla.org/en/DOM/document.title): Permite cambiar el titulo de la pagina que aparece en el navegador  
-Esto no cambia el contenido del tag title
-- [`document.referrer`](https://developer.mozilla.org/en/DOM/document.referrer): Contiene la URL desde donde hemos llegado a la página
-- [`document.domain`](https://developer.mozilla.org/en/document.domain): Contiene el dominio de la pagina
-
-## Selección Avanzada de Elementos
-
-A> → [CSS2: Syntax and basic data types | w3.org](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)  
-A> → [CSS contents and browser compatibility | quirksmode.org](http://www.quirksmode.org/css/contents.html)  
-
-###[`document.images`](https://developer.mozilla.org/en/DOM/document.images)
+- [`document.images`](https://developer.mozilla.org/en/DOM/document.images)
 
     `document.getElementsByTagName(‘img’)` 
 
-### [`rows`](https://developer.mozilla.org/en/DOM/table.rows) y [`cells`](https://developer.mozilla.org/en/DOM/HTMLTableRowElement)
+- [`rows`](https://developer.mozilla.org/en/DOM/table.rows) y [`cells`](https://developer.mozilla.org/en/DOM/HTMLTableRowElement)
 
 Dado un elemento table podemos acceder a sus filas y dado un row podemos acceder a sus celdas con estos selectores  
 
@@ -337,7 +301,7 @@ Dado un elemento table podemos acceder a sus filas y dado un row podemos acceder
  >>> oLastCell = aCells[aCells.length-1];
 ```
 
-###[`options`](https://developer.mozilla.org/en/DOM/HTMLSelectElement)
+- [`options`](https://developer.mozilla.org/en/DOM/HTMLSelectElement)
 
 Dado un elemento [`select`](https://developer.mozilla.org/en/HTML/Element/select ) podemos acceder al array de sus `options` 
 
@@ -347,90 +311,13 @@ Dado un elemento [`select`](https://developer.mozilla.org/en/HTML/Element/select
  option.linux, option.palm, option.pocketpc, option.blog]
 ```
 
-### [`querySelector`](https://developer.mozilla.org/En/DOM/Element.querySelector) y [`querySelectorAll`](https://developer.mozilla.org/En/DOM/Element.querySelectorAll)
+Tambien tenemos disponible el método [`document.write()`](https://developer.mozilla.org/en/document.write)   
+No se recomienda su uso ;-)
 
-Devuelve elementos del DOM a partir de una [selección CSS](http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/)  
+Algunas propiedades del objeto document son:
 
-- `querySelector()` devuelve el primer elemento encontrado   
-- `querySelectorAll()` devuelve un array de elementos   
-
-[Funciones nativas disponibles](http://caniuse.com/#feat=queryselector) a partir de IE8 y FF3.5  
-
-```javascript
- >>> oMyElem = document.querySelector("#myid");
- >>> aMyHiddenElems = document.body.querySelectorAll(".hidden");
-```
-
-### `$()` o [`jQuery()`](http://api.jquery.com/jQuery/)
-
-Con jQuery disponemos de una [potente herramienta de selección de elementos](http://sizzlejs.com/)
- 
-A> → [How jQuery selects elements using Sizzle | blog.bigbinary.com](http://blog.bigbinary.com/2010/02/15/how-jquery-selects-elements-using-sizzle.html)  
-A> → [jQuery Selectors | refcardz.dzone.com](http://refcardz.dzone.com/refcardz/jquery-selectors)
-
-Para obtener los elementos utilizamos `$()` o `jQuery()` pasándole nuestra [selección CSS](http://api.jquery.com/category/selectors/) entre comillas
-
-`$()` devuelve un [objeto jQuery](http://api.jquery.com/Types/#jQuery) (que no es un elemento DOM y tiene acceso a métodos propios de jQuery)
-
-Podemos pasar de objeto jQuery a selección DOM: 
-
-- Para un elemento
-
-`$('#container') -> $('#container')[0]`
-
-- Para un grupo de elementos
-
-`$('.hidden') -> $('.hidden').toArray()` 
-
-Tambien podemos pasar de selección DOM a objeto jQuery:
-
-- Para un elemento: 
-
-`document.getElementById('container') -> $(document.getElementById('container'))`
-
-- Para un grupo de elementos: 
-
-`document.links -> $(document.links);`
-
-```javascript
->>> $('#container');
-jQuery(div#container)
->>> $('#container')[0]
-
-<div id="container">
->>> $('#footer_contents')
-jQuery(div#footer_contents.clearfix)
->>> $('#footer_contents')[0]
-
-<div id="footer_contents" class="clearfix">
->>> $('#footer_contents').attr("class");
-"clearfix"
->>> $('#footer_contents').className
-undefined
->>> $('#footer_contents')[0].className
-"clearfix"
->>> $('#footer_contents')[0].attr("class");
- TypeError: $("#footer_contents")[0].attr is not a function
-
- >>> $('div.hidden')
- jQuery(div#ads_section_textlinks.clearfix, div#top_sales.top_box,
- div#top_valuated.top_box, div.list_container, div.ac_results)
-
- >>> $('div.hidden').toArray()
- [div#ads_section_textlinks.clearfix, div#top_sales.top_box,
- div#top_valuated.top_box, div.list_container, div.ac_results]
-
- >>> $('div.hidden').toArray()[0]
- <div id="ads_section_textlinks" class="clearfix
- hidden" style="display: block;">
-
- >>> document.getElementById('ads_section_textlinks');
- <div id="ads_section_textlinks" class="clearfix
- hidden" style="display: block;">
-
- >>> $(document.getElementById('ads_section_textlinks'));
- jQuery(div#ads_section_textlinks.clearfix)
-
- >>> $(document.querySelectorAll('div.hidden')[0]);
- jQuery(div#ads_section_textlinks.clearfix)
-```
+- `document.cookies`: Contiene una cadena de texto con las cookies asociadas al documento
+- [`document.title`](https://developer.mozilla.org/en/DOM/document.title): Permite cambiar el titulo de la pagina que aparece en el navegador  
+Esto no cambia el contenido del tag title
+- [`document.referrer`](https://developer.mozilla.org/en/DOM/document.referrer): Contiene la URL desde donde hemos llegado a la página
+- [`document.domain`](https://developer.mozilla.org/en/document.domain): Contiene el dominio de la pagina

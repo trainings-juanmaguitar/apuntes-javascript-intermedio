@@ -5,7 +5,89 @@ En el _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ se diferencia entre:
 - El **Core DOM** es la especificación común que se aplica a todos los documentos (XML, HTML,…)
 - El **Core HTML** es la especificación que se aplica sólo a documentos HTML
 
-## [Accediendo a los nodos](http://www.elated.com/articles/looking-inside-dom-page-elements/)
+La especificación DOM implementada en los navegadores provee de unos elementos y listas que representan a los elementos HTML seleccionados desde Javascript. Los más importantes son:
+
+    + Element
+    + NodeList
+    + HTMLCollection
+
+## Ideas claras sobre Element, NodeList y HTMLCollection
+
+http://alebelcor.github.io/2011/htmlcollections-nodelists/
+
+
+An HTMLCollection is a list of nodes. Collections in the HTML DOM are assumed to be live meaning that they are automatically updated when the underlying
+DOM Level 1www.w3.org/TR/REC-DOM-Level-1/…
+
+The NodeList interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented. odeList objects in the DOM are live.
+DOM Level 3www.w3.org/TR/2004/…
+
+
+- `NodeList` es una colección de nodos. 
+- `HTMLCollection` es una colección de elementos HTML/XML. 
+- `NodeList` es un contenedor más general. Por ejemplo, el contenido de texto de un parrafo `<p>` es un nodo pero no un elemento HTML
+- `HTMLCollection` tiene el método `namedItem` que no está en `NodeList`
+- `NodeList` y `HTMLCollection` son objetos parecidos a un array. Esto es asó, porque disponen de la propiedad `length` y tienen propiedades numeradas 0, 1, 2, …, n, por lo que puedes acceder a sus elementos como si lo hicieras con un array
+`NodeList` y `HTMLCollection` NO heredan del objeto Array. Para usar los métodos array en ellos tenemos que llamar a estos métodos de una manera especial:
+
+```javascript
+    Array.prototype.map.call(array-like_object, function)
+```
+
+〔➤see JavaScript: How to Convert Array-Like Object to Array?〕
+
+〔➤see JavaScript: Array Methods〕
+
+• NodeList ＆ HTMLCollection are NOT ALWAYS live objects. For example: document.querySelectorAll(css_selector) returns a non-live object. 〔➤see JavaScript: Get Elements by ID, Tag, Name, Class, CSS Selector〕
+
+• There's no builtin way to find out whether NodeList or HTMLCollection is live object.
+
+• When working with live objects, you must be careful, not to insert or remove element within a loop. 〔➤see JS+DOM: What Does Live Object Mean?〕
+
+You should NOT use for (var x in object) {…}, because that loops thru all enumerable properties and goes into prototype chain. 〔➤see JavaScript: Access/List Properties〕
+
+The most supported and safe and fast way to loop thru array-like object is a normal loop, like this: for (var i = 0; i < myNodeList.length; ++i) {… myNodeList[i] …}.
+
+How to Convert Array-Like Object to Array?
+
+See: JavaScript: How to Convert Array-Like Object to Array?
+
+http://xahlee.info/js/dom_common_dom_methods.html
+http://xahlee.info/js/js.html
+
+
+
+
+
+## Seleccionando nodos
+
+Podemos [acceder directamente a algunos elementos](http://www.elated.com/articles/javascript-retrieving-page-elements-via-the-dom/) sin necesidad de recorrer todo el árbol:
+
+- [`getElementsByTagName()`](https://developer.mozilla.org/en/DOM/element.getElementsByTagName): devuelve una lista de elementos ([HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)) con todos los elementos que tienen el tag que se le pasa por parámetro
+- [`getElementsByName()`](https://developer.mozilla.org/en/DOM/document.getElementsByName): Nos devuelve una lista de elementos ([NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)) con todos los elementos con el
+atributo `name` que se le pasa por parámetro
+- [`getElementsByClassName()`](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName): devuelve una lista de elementos ([HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)) con todos los elementos que tienen la clase se le pasa por parámetro
+- [`getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById): No devuelve el elemento ([Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)) con el id que se le pasa por parámetro
+- 
+
+```javascript
+>>> document.getElementsByTagName('p').length
+3
+>>> document.getElementsByTagName('p')[0]
+<p class="opener">
+>>> document.getElementsByTagName('p')[0].innerHTML
+"first paragraph"
+>>> document.getElementsByTagName('p')[2]
+<p id="closer">
+>>> document.getElementsByTagName('p')[2].id
+"closer"
+>>> document.getElementsByTagName('p')[0].className
+"opener"
+>>> document.getElementById('closer')
+<p id="closer">
+```
+
+## [Recorriendo a los nodos](http://www.elated.com/articles/looking-inside-dom-page-elements/)
 
 ```html
 <body>
@@ -105,31 +187,6 @@ En IE no existe esta propiedad (hay que usar innerText)
 "#text"
 >>> bd.childNodes[1].childNodes[0].nodeValue
 "first paragraph"
-```
-
-Podemos [acceder directamente a algunos elementos](http://www.elated.com/articles/javascript-retrieving-page-elements-via-the-dom/) sin necesidad de recorrer todo elárbol:
-
-- [`getElementsByTagName()`](https://developer.mozilla.org/en/DOM/element.getElementsByTagName): Nos devuelve un array con todos los elementos
-con el tag que se le pasa por parámetro
-- [`getElementsByName()`](https://developer.mozilla.org/en/DOM/document.getElementsByName): Nos devuelve un array con todos los elementos con el
-name que se le pasa por parámetro
-- [`getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById): No devuelve el elemento con el id que se le pasa por parámetro
-
-```javascript
->>> document.getElementsByTagName('p').length
-3
->>> document.getElementsByTagName('p')[0]
-<p class="opener">
->>> document.getElementsByTagName('p')[0].innerHTML
-"first paragraph"
->>> document.getElementsByTagName('p')[2]
-<p id="closer">
->>> document.getElementsByTagName('p')[2].id
-"closer"
->>> document.getElementsByTagName('p')[0].className
-"opener"
->>> document.getElementById('closer')
-<p id="closer">
 ```
 
 ![Parent & Childs](images/parent-child.png)

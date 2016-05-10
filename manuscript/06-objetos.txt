@@ -1,15 +1,15 @@
 # Objetos Globales
 
-##[Math](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math)
-
 Son los objetos que tenemos disponibles en el ámbito global (objetos primitivos)
 
 Los podemos dividir en 3 grupos
 
-- _Objetos contenedores de datos_:  (ver apuntes-js-1)
+- _Objetos contenedores de datos_:  
 - _Objetos de utilidades_: Math, Date, RegExp
 - _Objetos de errores_: Error
 
+
+##[Math](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math)
 
 _Math_ es un objeto con propiedades y métodos para usos matemáticos
 No es constructor de otros objetos

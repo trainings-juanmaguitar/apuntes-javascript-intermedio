@@ -1,0 +1,551 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../eventos/" />
+    
+    
+    <link rel="prev" href="../JSON/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../variable_tipos_datos_operadores/">
+            
+                <a href="../variable_tipos_datos_operadores/">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../condiciones_bucles/">
+            
+                <a href="../condiciones_bucles/">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../funciones/">
+            
+                <a href="../funciones/">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../objetos_globales/">
+            
+                <a href="../objetos_globales/">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../objetos_globales/arrays/">
+            
+                <a href="../objetos_globales/arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../expresiones_regulares/">
+            
+                <a href="../expresiones_regulares/">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DOM</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ajax">AJAX</h1>
+<p><sub><a href="http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/" target="_blank">http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/</a></sub><br><sub><a href="https://developer.mozilla.org/en/ajax" target="_blank">https://developer.mozilla.org/en/ajax</a></sub><br><sub><a href="http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/" target="_blank">http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/</a></sub><br><sub><a href="http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples" target="_blank">http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples</a></sub>  </p>
+<ul>
+<li><p>Agrupa un conjunto de tecnologias cuyo eje central son las peticiones asincronas al servidor a traves del objeto <code>XMLHttpRequest()</code> (XHR)<br><sub><a href="http://www.w3.org/TR/XMLHttpRequest/" target="_blank">http://www.w3.org/TR/XMLHttpRequest/</a>  </sub><br><sub><a href="http://www.xml.com/pub/a/2005/02/09/xml-http-request.html" target="_blank">http://www.xml.com/pub/a/2005/02/09/xml-http-request.html</a>  </sub></p>
+<p>  La aplicaci&#xF3;n de esta t&#xE9;cnica dio lugar a las llamadas aplicaciones AJAX, donde no es necesario refrescar la pagina para obtener nuevo contenido.</p>
+</li>
+</ul>
+<p><img src="https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/img/ajax.png" alt="AJAX"></p>
+<ul>
+<li><p>AJAX son las siglas de <strong>Asynchronous JavaScript + XML</strong>:</p>
+<ul>
+<li><em>Asynchronous</em> porque despues de hacer una peticion HTTP no necesita esperar a una respuesta, sino que puede seguir haciendo otras cosas y ser notificado cuando llegue la respuesta</li>
+<li><em>JavaScript</em> porque creamos los objetos XHR con Javascript</li>
+<li><em>XML</em> porque inicialmente era el formato standard de intercambio de datos. Actualmente una petici&#xF3;n HTTP suele devolver JSON (o HTML)</li>
+</ul>
+</li>
+<li><p>La mayor limitaci&#xF3;n de una petici&#xF3;n AJAX es que <a href="https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy" target="_blank">no puede acceder a datos de un dominio diferente</a> al que estamos (<em>cross-domain</em>)<br>  Pero hay maneras de solucionar este problema: <a href="https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP" target="_blank"><em>JSONP</em></a> y <a href="https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS" target="_blank"><em>CORS</em></a></p>
+</li>
+</ul>
+<h2 id="haciendo-la-petici&#xF3;n">Haciendo la petici&#xF3;n</h2>
+<p><sub><a href="https://developer.mozilla.org/en/XMLHttpRequest" target="_blank">https://developer.mozilla.org/en/XMLHttpRequest</a></sub><br><sub><a href="http://jibbering.com/2002/4/httprequest.html" target="_blank">http://jibbering.com/2002/4/httprequest.html</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.onreadystatechange = myCallback;
+xhr.open(<span class="hljs-string">&apos;GET&apos;</span>, url, <span class="hljs-literal">true</span>);
+xhr.send(<span class="hljs-string">&apos;&apos;</span>);
+</code></pre>
+<ul>
+<li><p>Las peticiones AJAX las hacemos a traves de objetos XHR.<br><sub><a href="http://es.wikipedia.org/wiki/XMLHttpRequest" target="_blank">http://es.wikipedia.org/wiki/XMLHttpRequest</a></sub><br><sub><a href="https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest" target="_blank">https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest</a></sub></p>
+<p>  Para crear un objeto XHR utilizamos el objeto <code>XMLHttpRequest()</code> que es nativo en IE7+, Safari, Opera y Firefox</p>
+<pre><code>  var xhr = new XMLHttpRequest();
+</code></pre></li>
+<li><p>Una vez creado el objeto XHR, capturamos el evento <code>readystatechange</code> de este objeto y le enganchamos una funci&#xF3;n.</p>
+<pre><code>  xhr.onreadystatechange = myCallback;
+</code></pre></li>
+<li><p>Despues hay que llamar al metodo <code>open()</code> pasandole los parametros de la peticion</p>
+<pre><code>  xhr.open(&apos;GET&apos;, &apos;somefile.txt&apos;, true);
+</code></pre><p>  <em>El 1er parametro es el tipo de peticion (GET, POST,&#x2026;).</em><br>  <em>El 2&#xBA; parametro es la URL</em><br>  <em>El 3er parametro indica si la petici&#xF3;n es as&#xED;ncrona (true) o s&#xED;ncrona (false)</em>  </p>
+</li>
+<li><p>Despues hay que llamar al metodo <code>send()</code> para hacer la petici&#xF3;n</p>
+<pre><code>  xhr.send(&apos;&apos;);
+</code></pre></li>
+</ul>
+<h2 id="procesando-la-respuesta">Procesando la respuesta</h2>
+<p><sub><a href="http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html" target="_blank">http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myCallback</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (xhr.readyState &lt; <span class="hljs-number">4</span>) {
+        <span class="hljs-keyword">return</span>; <span class="hljs-comment">// not ready yet</span>
+    }
+    <span class="hljs-keyword">if</span> (xhr.status !== <span class="hljs-number">200</span>) {
+        alert(<span class="hljs-string">&apos;Error!&apos;</span>); <span class="hljs-comment">// the HTTP status code is not OK</span>
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-comment">// all is fine, do the work</span>
+    alert(xhr.responseText);
+}
+</code></pre>
+<ul>
+<li><p>El objeto XHR tiene una propiedad llamada <code>readyState</code>  y cada vez que cambia esta propiedad se dispara el evento <code>readystatechange</code>
+  Los posibles valores de readyState son:</p>
+<ul>
+<li>0&#x2014;uninitialized</li>
+<li>1&#x2014;loading</li>
+<li>2&#x2014;loaded</li>
+<li>3&#x2014;interactive</li>
+<li><p><strong>4&#x2014;complete</strong>  </p>
+<p>Cuando <code>readyState</code> llega a 4 significa que ya se ha recibido una respuesta</p>
+</li>
+</ul>
+</li>
+<li><p>Una vez hemos recibido la respuesta hay que chequear el estado de la misma en la propiedad <code>status</code> del objeto XHR<br>  El valor que nos interesa para esta propiedad es 200 (OK)</p>
+</li>
+</ul>
+<h2 id="ajax-con-jquery">AJAX con jQuery</h2>
+<p><sub><a href="http://blogs.sitepoint.com/ajax-jquery/" target="_blank">http://blogs.sitepoint.com/ajax-jquery/</a></sub>
+<sub><a href="http://jqfundamentals.com/book/#chapter-7" target="_blank">http://jqfundamentals.com/book/#chapter-7</a></sub></p>
+<pre><code class="lang-javascript">$.ajax({
+    url: <span class="hljs-string">&apos;ajax/test.html&apos;</span>,
+    success: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+        $(<span class="hljs-string">&apos;.result&apos;</span>).html(data);
+        alert(<span class="hljs-string">&apos;Load was performed.&apos;</span>);
+    }
+});
+</code></pre>
+<ul>
+<li><p>Con jQuery podemos realizar nuestra petici&#xF3;n por AJAX con el metodo <a href="http://api.jquery.com/jQuery.ajax/" target="_blank"><code>$.ajax()</code></a></p>
+</li>
+<li><p>El metodo <code>$.ajax()</code> devuelve un objeto <a href="http://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank"><code>jqXHR</code></a> que viene a ser una version mejorada del objeto nativo <code>XMLHttpRequest</code></p>
+</li>
+<li><p>Al metodo <code>$.ajax()</code> le pasamos los parametros de nuestra petici&#xF3;n AJAX que son, entre otros:</p>
+<ul>
+<li><p><strong>url</strong> : La URL donde hacemos la peticion</p>
+</li>
+<li><p><strong>type</strong>: El tipo de petici&#xF3;n, <code>POST</code> o  <code>GET</code> (por defecto)<br>  Las peticiones <code>GET</code> las utilizamos normalmente para recibir datos (ya que se pueden cachear)<br>  Las peticiones <code>POST</code> las utilizamos para mandar datos al servidor  </p>
+</li>
+<li><p><strong>data</strong> : Los datos que enviaremos al servidor</p>
+</li>
+<li><p><strong>dataType</strong>: El tipo de datos que esperamos recibir del servidor (json, html, xml, jsonp, &#x2026;)</p>
+</li>
+</ul>
+</li>
+<li><p>Al <code>$.ajax()</code> le podemos pasar tambien unas cuantas funciones callback que se ejecutaran dependiendo del resultado de la petici&#xF3;n</p>
+<ul>
+<li><p><strong>success</strong>: La funci&#xF3;n que queremos ejecutar cuando recibamos la respuesta.<br>  Si los datos recibidos estan en formato JSON, la funci&#xF3;n los recibe directamente transformados en objeto Javascript<br>  A esta funci&#xF3;n le llega, ademas de los datos recibidos, el status de la petici&#xF3;n y el objeto <code>jqXHR</code> que maneja la petici&#xF3;n.</p>
+</li>
+<li><p><strong>error</strong>: Esta funci&#xF3;n se ejecutar&#xE1; si falla la petici&#xF3;n.<br>  A esta funci&#xF3;n le llega el objeto <code>jqXHR</code> que maneja la petici&#xF3;n y el error.</p>
+</li>
+<li><p><strong>complete</strong>: Esta funci&#xF3;n se ejecutar&#xE1; cuando finalize la petici&#xF3;n<br>  A esta funci&#xF3;n le llega el objeto <code>jqXHR</code> que maneja la petici&#xF3;n y el error o &#xE9;xito de la operaci&#xF3;n.</p>
+</li>
+<li><p><strong>beforeSend</strong>: Esta funci&#xF3;n se ejecuta antes de hacer la petici&#xF3;n<br>  A esta funci&#xF3;n le llega el objeto jqXHR que maneja la petici&#xF3;n y los parametros de la petici&#xF3;n</p>
+</li>
+<li><p><strong>dataFilter</strong>: Esta funci&#xF3;n se ejecuta inmediatamente despues de la recepci&#xF3;n exitosa de los datos<br>  A esta funci&#xF3;n le llega la informaci&#xF3;n recibida y el valor del dataType, y lo que devuelve le llega a success</p>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../JSON/" class="navigation navigation-prev " aria-label="Previous page: BOM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../eventos/" class="navigation navigation-next " aria-label="Next page: Events">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM","level":"1.11","depth":1,"next":{"title":"Events","level":"1.12","depth":1,"path":"eventos/README.md","ref":"eventos/README.md","articles":[]},"previous":{"title":"BOM","level":"1.10","depth":1,"path":"JSON/README.md","ref":"JSON/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"AJAX/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

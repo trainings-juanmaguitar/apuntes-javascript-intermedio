@@ -1,0 +1,806 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Variables y Operadores · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../condiciones_bucles/" />
+    
+    
+    <link rel="prev" href="../generalidades/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../condiciones_bucles/">
+            
+                <a href="../condiciones_bucles/">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../funciones/">
+            
+                <a href="../funciones/">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../objetos_globales/">
+            
+                <a href="../objetos_globales/">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../objetos_globales/arrays/">
+            
+                <a href="../objetos_globales/arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../AJAX/">
+            
+                <a href="../AJAX/">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../expresiones_regulares/">
+            
+                <a href="../expresiones_regulares/">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Variables y Operadores</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="variables">Variables</h1>
+<ul>
+<li><p>Las Variables se utilizan para almacenar datos</p>
+</li>
+<li><p>Las variables solo tienen visibilidad (ambito) dentro de las funciones donde se declaran</p>
+</li>
+<li><p>Antes de poder utilizar una variable hay que:</p>
+<ul>
+<li>Declarar la variable (con la sentencia <code>var</code>)</li>
+<li>Inicializar la variable (en el momento de la declaraci&#xF3;n o despues)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> b;
+b = <span class="hljs-number">2</span>;
+</code></pre>
+<ul>
+<li>Las variables son Case Sensitive</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> case_matters = <span class="hljs-string">&apos;lower&apos;</span>;
+<span class="hljs-keyword">var</span> CASE_MATTERS = <span class="hljs-string">&apos;upper&apos;</span>;
+case_matters
+CASE_MATTERS
+</code></pre>
+<h3 id="&#xBF;c&#xF3;mo-chequear-la-existencia-de-una-variable">&#xBF;C&#xF3;mo chequear la existencia de una variable?</h3>
+<ul>
+<li><p>Forma Mala</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;&apos;</span>;
+  &gt;&gt;&gt; <span class="hljs-keyword">if</span> (somevar){result = <span class="hljs-string">&apos;yes&apos;</span>;}
+  somevar is not defined
+  &gt;&gt;&gt; result;
+  <span class="hljs-string">&quot;&quot;</span>
+</code></pre>
+</li>
+</ul>
+<p><em>Genera un warning y que &#x2018;somevar&#x2019; devuelva FALSE no quiere decir que no est&#xE9; definida</em></p>
+<ul>
+<li><p><a href="http://bonsaiden.github.io/JavaScript-Garden/#types.typeof" target="_blank">Forma Correcta</a></p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> somevar;
+  &gt;&gt;&gt; <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> somevar !== <span class="hljs-string">&quot;undefined&quot;</span>){result = <span class="hljs-string">&apos;yes&apos;</span>;}
+  &gt;&gt;&gt; result;
+  <span class="hljs-string">&quot;&quot;</span>
+</code></pre>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; somevar = <span class="hljs-number">123</span>;
+  &gt;&gt;&gt; <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> somevar !== <span class="hljs-string">&quot;undefined&quot;</span>){result = <span class="hljs-string">&apos;yes&apos;</span>;}
+  &gt;&gt;&gt; result;
+  <span class="hljs-string">&quot;yes&quot;</span>
+</code></pre>
+</li>
+</ul>
+<p><em>Si la variable est&#xE1; definida y tiene alg&#xFA;n valor, su tipo de datos siempre ser&#xE1; distinto de undefined</em></p>
+<h1 id="primitivas-y-tipos-de-datos">Primitivas y Tipos de Datos</h1>
+<ul>
+<li><p>Cualquier valor que se utilize en JS es de un cierto tipo. En Javascript existen los siguientes tipos de datos primitivos:</p>
+<ul>
+<li><strong>Number</strong>: Puede contener numeros enteros (integer), decimales (float), hexadecimales, octales, exponentes y los n&#xFA;meros especiales <code>NaN</code> y <code>Infinity</code></li>
+<li><strong>String</strong>: Cualquier numero de caracteres entre comillas</li>
+<li><strong>Boolean</strong>: puede ser <code>true</code> or <code>false</code> </li>
+<li><strong>Undefined</strong>: Es un tipo de datos con un solo valor: <a href="http://bonsaiden.github.com/JavaScript-Garden/#core.undefined" target="_blank"><code>undefined</code></a>
+Lo devuelve JS cuando no existe una variable o no est&#xE1; inicializada.</li>
+<li><strong>Null</strong>: Otro tipo de datos con un solo valor: <a href="http://bonsaiden.github.com/JavaScript-Garden/#core.undefined" target="_blank"><code>null</code></a>
+Lo podemos asignar nosotros para inicializar a vacio.</li>
+</ul>
+</li>
+<li><p>Cualquier valor que no pertenezca a uno de estos 5 tipo de primitivas es un objeto</p>
+</li>
+<li><p>Asi que los tipos de datos en javascript pueden ser:</p>
+<ul>
+<li>Primitivas (Los 5 tipos)</li>
+<li>No primitivas (Objetos)</li>
+</ul>
+</li>
+<li><p>Aunque existe el operador <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof" target="_blank"><code>typeof</code></a> que devuelve el tipo de dato, es mejor utilizar <a href="http://bonsaiden.github.io/JavaScript-Garden/#types.typeof" target="_blank"><code>Object.prototype.toString</code></a></p>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">typeof</span>([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])
+<span class="hljs-string">&quot;object&quot;</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Object</span>.prototype.toString.call([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])
+<span class="hljs-string">&quot;[object Array]&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{})
+<span class="hljs-string">&quot;function&quot;</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{})
+<span class="hljs-string">&quot;[object Function]&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>())
+<span class="hljs-string">&quot;object&quot;</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>())
+<span class="hljs-string">&quot;[object Date]&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span>(<span class="hljs-number">27</span>)
+<span class="hljs-string">&quot;number&quot;</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">27</span>)
+<span class="hljs-string">&quot;[object Number]&quot;</span>
+</code></pre>
+<ul>
+<li>Existe el valor especial <code>NaN</code> (Not a Number) que obtenemos cuando intentamos hacer una operaci&#xF3;n que asume numeros pero la operaci&#xF3;n falla.</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span> * f;
+&gt;&gt;&gt; a
+<span class="hljs-literal">NaN</span>
+</code></pre>
+<h1 id="operadores-aritm&#xE9;ticos-l&#xF3;gicos-y-de-comparaci&#xF3;n">Operadores (Aritm&#xE9;ticos, L&#xF3;gicos y de Comparaci&#xF3;n)</h1>
+<ul>
+<li><p>Los Operadores toman uno o dos valores (o variables), realizan una operaci&#xF3;n, y devuelven un valor</p>
+</li>
+<li><p>El operador simple de asignaci&#xF3;n es =</p>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+</code></pre>
+<h2 id="operadores-aritm&#xE9;ticos">Operadores Aritm&#xE9;ticos</h2>
+<ul>
+<li><p>Los operadores aritm&#xE9;ticos b&#xE1;sicos son:</p>
+<h4 id="suma"><code>+</code> Suma</h4>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> + <span class="hljs-number">2</span>;
+  <span class="hljs-number">3</span>
+</code></pre>
+<h4 id="-resta"><code>-</code> Resta</h4>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">99.99</span> - <span class="hljs-number">11</span>;
+  <span class="hljs-number">88.99</span>
+</code></pre>
+<h4 id="multiplicaci&#xF3;n"><code>*</code> Multiplicaci&#xF3;n</h4>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">2</span> * <span class="hljs-number">3</span>;
+  <span class="hljs-number">6</span>
+</code></pre>
+<h4 id="divisi&#xF3;n"><code>/</code> Divisi&#xF3;n</h4>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">6</span> / <span class="hljs-number">4</span>;
+  <span class="hljs-number">1.5</span>
+</code></pre>
+<h4 id="modulo"><code>%</code> Modulo</h4>
+<p>  El resto de la divisi&#xF3;n</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">6</span> % <span class="hljs-number">3</span>;
+  <span class="hljs-number">0</span>
+  &gt;&gt;&gt; <span class="hljs-number">5</span> % <span class="hljs-number">3</span>;
+  <span class="hljs-number">2</span>
+</code></pre>
+<p>  Podemos utilizar el operador modulo, por ejemplo, para comprobar si un numero es par (<code>% = 0</code>) o impar (<code>% = 1</code>) .</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">4</span> % <span class="hljs-number">2</span>;
+  <span class="hljs-number">0</span>
+  &gt;&gt;&gt; <span class="hljs-number">5</span> % <span class="hljs-number">2</span>;
+  <span class="hljs-number">1</span>
+</code></pre>
+<h4 id="incremento-en-1"><code>++</code> Incremento en 1</h4>
+<p>  <em>Post-incremento</em> devuelve el valor original (return) y despues incrementa el valor en 1.</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span>; <span class="hljs-keyword">var</span> b = a++;
+  &gt;&gt;&gt; b;
+  <span class="hljs-number">123</span>
+  &gt;&gt;&gt; a;
+  <span class="hljs-number">124</span>
+</code></pre>
+<p>  <em>Pre-incremento</em> incrementa el valor en 1 y despues devuelve (return) el nuevo valor (ya incrementado).</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span>; <span class="hljs-keyword">var</span> b = ++a;
+  &gt;&gt;&gt; b;
+  <span class="hljs-number">124</span>
+  &gt;&gt;&gt; a;
+  <span class="hljs-number">124</span>
+</code></pre>
+<h4 id="--decremento-en-1"><code>--</code> Decremento en 1</h4>
+<p>  <em>Post-decremento</em> devuelve el valor original (return) y despues resta el valor en 1.</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span>; <span class="hljs-keyword">var</span> b = a--;
+  &gt;&gt;&gt; b;
+  <span class="hljs-number">123</span>
+  &gt;&gt;&gt; a;
+  <span class="hljs-number">122</span>
+</code></pre>
+<p>  <em>Pre-incremento</em> resta el valor en 1 y despues devuelve (return) el nuevo valor (ya restado).</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span>; <span class="hljs-keyword">var</span> b = --a;
+  &gt;&gt;&gt; b;
+  <span class="hljs-number">122</span>
+  &gt;&gt;&gt; a;
+  <span class="hljs-number">122</span>
+</code></pre>
+</li>
+<li><p>Tambien hay operadores compuestos</p>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">5</span>;
+&gt;&gt;&gt; a += <span class="hljs-number">3</span>;
+<span class="hljs-number">8</span>
+</code></pre>
+<h2 id="operadores-l&#xF3;gicos">Operadores L&#xF3;gicos</h2>
+<ul>
+<li><p>Los Operadores L&#xF3;gicos   son:</p>
+<ul>
+<li><p><code>!</code>   &#x2192; logical NOT (negation) </p>
+</li>
+<li><p><code>&amp;&amp;</code>  &#x2192; logical AND </p>
+</li>
+<li><p><code>||</code>  &#x2192; logical OR</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> b = !<span class="hljs-literal">true</span>;
+&gt;&gt;&gt; b; 
+<span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>La doble negaci&#xF3;n nos devuelve el valor original</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> b = !!<span class="hljs-literal">true</span>;
+&gt;&gt;&gt; b; 
+<span class="hljs-literal">true</span>
+</code></pre>
+<ul>
+<li>Las posibles operaciones y sus resultados son:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true &amp;&amp; true</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>true &amp;&amp; false</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>false &amp;&amp; true</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>false &amp;&amp; false</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>`true</td>
+<td></td>
+<td>true`</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>`true</td>
+<td></td>
+<td>false`</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>`false</td>
+<td></td>
+<td>true`</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>`false</td>
+<td></td>
+<td>false`</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="operadores-de-comparaci&#xF3;n">Operadores de Comparaci&#xF3;n</h2>
+<ul>
+<li><p>Los Operadores de Comparaci&#xF3;n son:</p>
+<h4 id="igualdad"><code>==</code> Igualdad</h4>
+<p>  Devuelve <code>true</code> cuando los dos operandos son iguales. Los operandos son convertidos al mismo tipo de datos antes de la comparacion</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> == <span class="hljs-number">1</span>;
+  <span class="hljs-literal">true</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> == <span class="hljs-number">2</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> == <span class="hljs-string">&apos;1&apos;</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="igualdad-y-tipo"><code>===</code> Igualdad y Tipo</h4>
+<p>  Devuelve <code>true</code> cuando los dos operandos son iguales Y cuando son del mismo tipo de datos. Suele ser mejor y m&#xE1;s seguro, utilizar esta comparaci&#xF3;n de igualdad (no hay transformaciones de tipo no controladas)</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> === <span class="hljs-string">&apos;1&apos;</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> === <span class="hljs-number">1</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="no-igualdad"><code>!=</code> No Igualdad</h4>
+<p>  Devuelve <code>true</code> cuando los dos operandos NO son iguales (despues de una conversion de tipo)</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> != <span class="hljs-number">1</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> != <span class="hljs-string">&apos;1&apos;</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> != <span class="hljs-number">2</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="no-igualdad-sin-conversion-de-tipo"><code>!==</code> No Igualdad Sin conversion de tipo</h4>
+<p>  Devuelve <code>true</code> cuando los dos operandos NO son iguales o cuando son de tipos diferentes</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> !== <span class="hljs-number">1</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> !== <span class="hljs-string">&apos;1&apos;</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="mayor-que"><code>&gt;</code> Mayor que</h4>
+<p>  Devuelve <code>true</code> si el operando de la izquierda es mayor que el de la derecha</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> &gt; <span class="hljs-number">1</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">33</span> &gt; <span class="hljs-number">22</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="mayor-o-igual-que"><code>&gt;=</code> Mayor o Igual que</h4>
+<p>  Devuelve <code>true</code> si el operando de la izquierda es mayor o igual que el de la derecha</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> &gt;= <span class="hljs-number">1</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="menor-que"><code>&lt;</code> Menor que</h4>
+<p>  Devuelve <code>true</code> si el operando de la izquierda es menor que el de la derecha</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> &lt; <span class="hljs-number">1</span>;
+  <span class="hljs-literal">false</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> &lt; <span class="hljs-number">2</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="menor-o-igual-que"><code>&lt;=</code> Menor o Igual que</h4>
+<p>  Devuelve <code>true</code> si el operando de la izquierda es menor o igual que el de la derecha</p>
+<pre><code class="lang-javascript">  &gt;&gt;&gt; <span class="hljs-number">1</span> &lt;= <span class="hljs-number">1</span>;
+  <span class="hljs-literal">true</span>
+  &gt;&gt;&gt; <span class="hljs-number">1</span> &lt;= <span class="hljs-number">2</span>;
+  <span class="hljs-literal">true</span>
+</code></pre>
+</li>
+</ul>
+<h1 id="conversiones">Conversiones</h1>
+<ul>
+<li>Si utilizamos un numero entre comillas (string) en una operaci&#xF3;n aritm&#xE9;tica Javascript lo convierte en numero</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> s = <span class="hljs-string">&quot;100&quot;</span>; <span class="hljs-keyword">typeof</span> s; 
+<span class="hljs-string">&quot;string&quot;</span> 
+&gt;&gt;&gt; s = s * <span class="hljs-number">1</span>; 
+<span class="hljs-number">100</span> 
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> s; 
+<span class="hljs-string">&quot;number&quot;</span>
+</code></pre>
+<ul>
+<li>&#xA1;OJO! <code>undefined</code> y <code>null</code> devuelven cosas diferentes al convertirlas a numero </li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-number">1</span>*<span class="hljs-literal">undefined</span> 
+<span class="hljs-literal">NaN</span>
+&gt;&gt;&gt; <span class="hljs-number">1</span>*<span class="hljs-literal">null</span> 
+<span class="hljs-number">0</span>
+</code></pre>
+<ul>
+<li>Si utilizamos <code>true</code> or <code>false</code> entre comillas Javascript lo convierte en string</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> b = <span class="hljs-string">&quot;true&quot;</span>; <span class="hljs-keyword">typeof</span> b; 
+<span class="hljs-string">&quot;string&quot;</span>
+</code></pre>
+<ul>
+<li>La doble negaci&#xF3;n <code>!!</code> es una forma sencilla de convertir cualquier valor en su Booleano correspondiente. </li>
+</ul>
+<pre><code>```javascript
+&gt;&gt;&gt; !!0
+false
+&gt;&gt;&gt; !!1
+true
+&gt;&gt;&gt; !!&quot;&quot;
+false
+&gt;&gt;&gt; !!&quot;hola&quot;
+true
+&gt;&gt;&gt; !!undefined
+false
+&gt;&gt;&gt; !!null
+false
+```
+
+Aplicandolo podemos comprobar como cualquier valor covertido a Booleano es `true` excepto:
+
+- `&quot;&quot;`
+- `null`
+- `undefined` 
+- `0`
+- `NaN`
+- `false`
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../generalidades/" class="navigation navigation-prev " aria-label="Previous page: Ideas Claras de Javascript">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../condiciones_bucles/" class="navigation navigation-next " aria-label="Next page: Condiciones y Bucles">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Variables y Operadores","level":"1.4","depth":1,"next":{"title":"Condiciones y Bucles","level":"1.5","depth":1,"path":"condiciones_bucles/README.md","ref":"condiciones_bucles/README.md","articles":[]},"previous":{"title":"Ideas Claras de Javascript","level":"1.3","depth":1,"path":"generalidades/README.md","ref":"generalidades/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"variable_tipos_datos_operadores/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

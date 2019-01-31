@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Condiciones y Bucles · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../funciones/" />
+    
+    
+    <link rel="prev" href="../variable_tipos_datos_operadores/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../variable_tipos_datos_operadores/">
+            
+                <a href="../variable_tipos_datos_operadores/">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../funciones/">
+            
+                <a href="../funciones/">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../objetos_globales/">
+            
+                <a href="../objetos_globales/">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../objetos_globales/arrays/">
+            
+                <a href="../objetos_globales/arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../AJAX/">
+            
+                <a href="../AJAX/">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../expresiones_regulares/">
+            
+                <a href="../expresiones_regulares/">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Condiciones y Bucles</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="condiciones-bifurcaciones-condicionales">Condiciones (Bifurcaciones Condicionales)</h1>
+<ul>
+<li><p>Una <em>condici&#xF3;n</em> es una estructura que realiza una tarea u otra dependiendo del resultado de evaluar una condici&#xF3;n.  Aqu&#xED; vamos a ver:</p>
+<ul>
+<li>La estructura <strong>IF&#x2026; ELSE</strong></li>
+<li>La estructura <strong>SWITCH</strong></li>
+</ul>
+</li>
+<li><p>Un Bloque (de c&#xF3;digo) es el conjunto de expresiones que quedan encerradas entre llaves. Estos bloques se pueden anidar.</p>
+</li>
+</ul>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block</a></sub></p>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">{ 
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>; 
+    <span class="hljs-keyword">var</span> b = <span class="hljs-number">3</span>; 
+    <span class="hljs-keyword">var</span> c, d; 
+    { 
+        c = a + b; 
+        { 
+        d = a - b; 
+    } 
+}
+</code></pre>
+<h2 id="el-if---else">El <code>if - else</code></h2>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;&apos;</span>;
+<span class="hljs-keyword">if</span> (a &gt; <span class="hljs-number">2</span>) { 
+result = <span class="hljs-string">&apos;a is greater than 2&apos;</span>;
+}
+</code></pre>
+<ul>
+<li><p>Las partes de una condici&#xF3;n if </p>
+<ul>
+<li>La sentencia <code>if</code></li>
+<li><p>Una condici&#xF3;n entre par&#xE9;ntesis. 
+  Esta condici&#xF3;n siempre devolver&#xE1; un booleano.
+  Esta condici&#xF3;n puede contener:</p>
+<ul>
+<li>Una operaci&#xF3;n l&#xF3;gica: <code>!</code>, <code>&amp;&amp;</code> o <code>||</code></li>
+<li>Una comparaci&#xF3;n como <code>===</code>, <code>!=</code>, <code>&gt;</code> y dem&#xE1;s</li>
+<li>Cualquier valor o variable que pueda ser convertido a Booleano</li>
+<li>Una combinaci&#xF3;n de estas</li>
+</ul>
+</li>
+<li><p>El bloque de c&#xF3;digo a ejecutar si se cumple la condici&#xF3;n </p>
+</li>
+</ul>
+</li>
+<li><p>En el <code>if</code> tambien puede haber una parte else opcional seguido de un bloque de c&#xF3;digo que se ejecutar&#xE1; si la condici&#xF3;n se evalua a <code>false</code></p>
+</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (a &gt; <span class="hljs-number">2</span>) { 
+    result = <span class="hljs-string">&apos;a is greater than 2&apos;</span>;
+} <span class="hljs-keyword">else</span> { 
+    result = <span class="hljs-string">&apos;a is NOT greater than 2&apos;</span>;
+}
+</code></pre>
+<ul>
+<li>Entre el <code>if</code> y el <code>else</code>, pueden haber ilimitado numero de condiciones <code>else if</code></li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (a &gt; <span class="hljs-number">2</span> || a &lt; <span class="hljs-number">-2</span>) { 
+    result = <span class="hljs-string">&apos;a is not between -2 and 2&apos;</span>; 
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a === <span class="hljs-number">0</span> &amp;&amp; b === <span class="hljs-number">0</span>) { 
+    result = <span class="hljs-string">&apos;both a and b are zeros&apos;</span>; 
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a === b) { 
+    result = <span class="hljs-string">&apos;a and b are equal&apos;</span>; 
+} <span class="hljs-keyword">else</span> { 
+    result = <span class="hljs-string">&apos;I give up&apos;</span>; 
+}
+</code></pre>
+<ul>
+<li><p>&#xBF;Cu&#xE1;l es la mejor manera de chequear si existe una variable?</p>
+</li>
+<li><p>Existe tambi&#xE9;n lo que se llama el operador ternario ? que nos permite abreviar algunas  sentencias if simples </p>
+</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = (a === <span class="hljs-number">1</span>) ? <span class="hljs-string">&quot;a is one&quot;</span> : <span class="hljs-string">&quot;a is not one&quot;</span>;
+</code></pre>
+<p><sub><a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator" target="_blank">https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator</a></sub><br><sub><a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator" target="_blank">http://blog.stchur.com/2006/07/14/the-javascript-ternary-operator/</a></sub></p>
+<h2 id="el-switch">El <code>switch</code></h2>
+<p><sub><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch" target="_blank">https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;1&apos;</span>;
+<span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;&apos;</span>;
+<span class="hljs-keyword">switch</span> (a) { 
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: 
+    result = <span class="hljs-string">&apos;Number 1&apos;</span>; 
+    <span class="hljs-keyword">break</span>; 
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;1&apos;</span>: 
+    result = <span class="hljs-string">&apos;String 1&apos;</span>; 
+    <span class="hljs-keyword">break</span>; 
+  <span class="hljs-keyword">default</span>: 
+    result = <span class="hljs-string">&apos;I don\&apos;t know&apos;</span>; 
+    <span class="hljs-keyword">break</span>;
+}
+result;
+</code></pre>
+<ul>
+<li><p>Las partes de un switch </p>
+<ul>
+<li>La sentencia <code>switch</code>  </li>
+<li>Una expresi&#xF3;n entre par&#xE9;ntesis.<br>  Esta expresi&#xF3;n normalmente ser&#xE1; una variable, pero puede ser cualquier expresi&#xF3;n que devuelva un valor</li>
+<li>Cierto numero de bloques <code>case</code> entre corchetes </li>
+<li>Cada sentencia <code>case</code> va seguida de una expresi&#xF3;n.<br>El resultado de esta expresi&#xF3;n se compara con la expresi&#xF3;n que hay despu&#xE9;s del switch.<br>Si la comparaci&#xF3;n de igualdad devuelve <code>true</code>, se ejecuta el bloque que hay tras este <code>case</code></li>
+<li>Puede (y debe) haber una sentencia <code>break</code> al final de cada bloque <code>case</code>.<br>Estos <code>break</code> provocan la salida del <code>switch</code> (de esta manera nos aseguramos de ejecutar un solo bloque <code>case</code>)</li>
+<li>Tambien puede (y debe) haber una sentencia  <code>default</code> que es seguida de un bloque de c&#xF3;digo que se ejecuta si ninguno de los <code>case</code> es evaluado a <code>true</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="bucles-loops">Bucles (Loops)</h1>
+<ul>
+<li><p>Un bucle es una estructura que nos permite repetir un bloque de c&#xF3;digo muchas veces. </p>
+<p>  El n&#xFA;mero de repeticiones depender&#xE1; del resultado de evaluar una condici&#xF3;n, antes (o despu&#xE9;s) de cada iteraci&#xF3;n</p>
+</li>
+<li><p>En Javascript hay 4 tipos de bucles:</p>
+<ul>
+<li>while loops </li>
+<li>do-while loops </li>
+<li>for loops </li>
+<li>for-in loops</li>
+</ul>
+</li>
+</ul>
+<h2 id="el-bucle-while">El bucle <code>while</code></h2>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">10</span>) { 
+  i++;
+}
+</code></pre>
+<p><img src="img/bucle_while.png" alt="Bucle While JS" title="Bucle While JS"></p>
+<ul>
+<li>La sentencia <code>while</code> va seguida de una condici&#xF3;n entre par&#xE9;ntesis y un bloque de c&#xF3;digo entre corchetes.
+Mientras la condici&#xF3;n se evalue a true, el c&#xF3;digo se ejecutar&#xE1; una y otra vez. </li>
+<li>El n&#xFA;mero de repeticiones depender&#xE1; del resultado de evaluar una condici&#xF3;n, antes (o despu&#xE9;s) de cada iteraci&#xF3;n</li>
+</ul>
+<h2 id="el-bucle-do-while">El bucle <code>do-while</code></h2>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while</a></sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span> { 
+  i++;
+} <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">10</span>)
+</code></pre>
+<ul>
+<li>El  bucle <code>do-while</code>  es una peque&#xF1;a variaci&#xF3;n del bucle <code>while</code><br>  La sentencia <code>do</code> va seguida de un bloque de c&#xF3;digo y una condici&#xF3;n (con <code>while</code>) despu&#xE9;s del bloque.<br>  Esto implica que el bloque de c&#xF3;digo se va a ejecutar siempre, al menos una vez, antes de evaluar la condici&#xF3;n.  </li>
+</ul>
+<h2 id="el-bucle-for">El bucle <code>for</code></h2>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for</a>  </sub><br><sub><a href="http://blogs.sun.com/greimer/entry/best_way_to_code_a" target="_blank">http://blogs.sun.com/greimer/entry/best_way_to_code_a</a>  </sub><br><sub><a href="http://blogs.sun.com/greimer/resource/loop-test.html" target="_blank">http://blogs.sun.com/greimer/resource/loop-test.html</a>  </sub>  </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> punishment = <span class="hljs-string">&apos;&apos;</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) { 
+  punishment += <span class="hljs-string">&apos;I will never do this again, &apos;</span>;
+}
+</code></pre>
+<p><img src="img/bucle_for.png" alt="Bucle For JS" title="Bucle For JS"></p>
+<ul>
+<li><p>La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por ;)</p>
+<ul>
+<li><strong>Inicializaci&#xF3;n</strong> <em>(var i=0)</em>: C&#xF3;digo que es ejecutado antes de entrar en el bucle [O]</li>
+<li><strong>Evaluaci&#xF3;n</strong> <em>(i&lt;100)</em>: Mientras evalue a true seguimos con el bucle [C]</li>
+<li><strong>Incremento</strong> <em>(i++)</em>:  C&#xF3;digo que es ejecutado despu&#xE9;s de cada iteraci&#xF3;n [++]</li>
+</ul>
+</li>
+<li><p>Se pueden anidar bucles <code>for</code></p>
+</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = <span class="hljs-string">&apos;\n&apos;</span>; 
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) { 
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">10</span>; j++) { 
+    res += <span class="hljs-string">&apos;* &apos;</span>; 
+  } 
+  res+= <span class="hljs-string">&apos;\n&apos;</span>;
+}
+</code></pre>
+<h2 id="el-bucle-for-in">El bucle <code>for-in</code></h2>
+<p><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in</a> </sub></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;y&apos;</span>, <span class="hljs-string">&apos;z&apos;</span>];
+<span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;\n&apos;</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> a) { 
+  result += <span class="hljs-string">&apos;index: &apos;</span> + i + <span class="hljs-string">&apos;, value: &apos;</span> + a[i] + <span class="hljs-string">&apos;\n&apos;</span>;
+}
+</code></pre>
+<ul>
+<li>El bucle <code>for-in</code> es utilizado para recorrer los elementos de un array (o de un objeto) </li>
+</ul>
+<p>Aunque basandonos en ES5 tambien podriamos utilizar <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" target="_blank"><code>Object.keys</code></a> y <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank"><code>forEach</code></a> y hacer </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> obj = { first: <span class="hljs-string">&quot;John&quot;</span>, last: <span class="hljs-string">&quot;Doe&quot;</span> };
+
+<span class="hljs-comment">// Visit non-inherited enumerable keys</span>
+<span class="hljs-built_in">Object</span>.keys(obj).forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">key</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(key);
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../variable_tipos_datos_operadores/" class="navigation navigation-prev " aria-label="Previous page: Variables y Operadores">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../funciones/" class="navigation navigation-next " aria-label="Next page: Funciones">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Condiciones y Bucles","level":"1.5","depth":1,"next":{"title":"Funciones","level":"1.6","depth":1,"path":"funciones/README.md","ref":"funciones/README.md","articles":[]},"previous":{"title":"Variables y Operadores","level":"1.4","depth":1,"path":"variable_tipos_datos_operadores/README.md","ref":"variable_tipos_datos_operadores/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"condiciones_bucles/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

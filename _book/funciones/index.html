@@ -1,0 +1,709 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Funciones · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../objetos/" />
+    
+    
+    <link rel="prev" href="../condiciones_bucles/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../variable_tipos_datos_operadores/">
+            
+                <a href="../variable_tipos_datos_operadores/">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../condiciones_bucles/">
+            
+                <a href="../condiciones_bucles/">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../objetos_globales/">
+            
+                <a href="../objetos_globales/">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../objetos_globales/arrays/">
+            
+                <a href="../objetos_globales/arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../AJAX/">
+            
+                <a href="../AJAX/">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../expresiones_regulares/">
+            
+                <a href="../expresiones_regulares/">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Funciones</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="funciones">Funciones</h1>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">a, b</span>) </span>{
+  <span class="hljs-keyword">var</span> c = a + b;
+  <span class="hljs-keyword">return</span> c;
+}
+</code></pre>
+<p>Las <strong>funciones</strong> nos permiten agrupar varias l&#xED;neas de c&#xF3;digo bajo un nombre.
+De esta forma podemos reutilizar este c&#xF3;digo, invocando el nombre de la funci&#xF3;n.</p>
+<p>Las partes de una funci&#xF3;n:</p>
+<ul>
+<li>La <em>sentencia <code>function</code></em></li>
+<li>El <em>nombre</em> de la funci&#xF3;n (<em>sum</em>)</li>
+<li><em>Par&#xE1;metros</em> (argumentos) que espera la funci&#xF3;n (<em>a</em> y <em>b</em>)
+Una funci&#xF3;n puede aceptar cero o m&#xE1;s argumentos separados por comas</li>
+<li>Un bloque de c&#xF3;digo, tambi&#xE9;n llamado el <em>cuerpo de la funcion</em></li>
+<li>La sentencia <em><code>return</code></em><br>Una funci&#xF3;n siempre devuelve un valor.<br>Si no devuelve expl&#xED;citamente un valor, impl&#xED;citamente devuelve el valor
+<code>undefined</code>  </li>
+</ul>
+<p>Una funci&#xF3;n <em>solo puede devolver un valor.</em><br>Si se necesita devolver mas de un valor, se puede devolver un array o un objeto con esos valores</p>
+<p>Para llamar a una funci&#xF3;n tan solo tenemos que usar su nombre seguido de algunos par&#xE1;metros (o ninguno) entre par&#xE9;ntesis</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> result = sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+&gt;&gt;&gt; result;
+<span class="hljs-number">3</span>
+</code></pre>
+<p><sub><a href="https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope" target="_blank">https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope</a></sub><br><sub><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function" target="_blank">https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function</a></sub><br><sub><a href="https://bonsaiden.github.io/JavaScript-Garden/#function" target="_blank">https://bonsaiden.github.io/JavaScript-Garden/#function</a></sub>  </p>
+<h2 id="parametros">Parametros</h2>
+<p>Una funci&#xF3;n puede no requerir par&#xE1;metros, pero si los requiere y no se les pasa a la funci&#xF3;n, Javascript les asignar&#xE1; el valor <code>undefined</code></p>
+<p>Si la funci&#xF3;n recibe mas par&#xE1;metros de los esperados, simplemente los ignorar&#xE1;</p>
+<p>Dentro de cada funci&#xF3;n tenemos disponible el objeto (pseudo-array) <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Obsolete_Pages/Gu%C3%ADa_JavaScript_1.5/Usando_el_objeto_arguments" target="_blank"><code>arguments</code></a> que contiene los argumentos pasados a la funci&#xF3;n</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumOnSteroids</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> i, res = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">var</span> number_of_params = <span class="hljs-built_in">arguments</span>.length;
+  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; number_of_params; i++) {
+    res += <span class="hljs-built_in">arguments</span>[i];
+  }
+  <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<h2 id="funciones-pre-definidas">Funciones pre-definidas</h2>
+<p>Hay una serie de funciones que est&#xE1;n directamente definidas dentro del motor de Javascript. 
+Estas funciones pre-definidas son:</p>
+<ul>
+<li><code>parseInt()</code></li>
+<li><code>parseFloat()</code></li>
+<li><code>isNaN()</code></li>
+<li><code>isFinite()</code></li>
+<li><code>encodeURI()</code></li>
+<li><code>decodeURI()</code></li>
+<li><code>encodeURIComponent()</code></li>
+<li><code>decodeURIComponent()</code></li>
+<li><code>eval()</code></li>
+</ul>
+<h3 id="parseint"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseInt" target="_blank">parseInt()</a></h3>
+<p><code>parseInt()</code> toma un valor e intenta transformarlo en n&#xFA;mero entero.
+Si falla devuelve NaN.<br><code>parseInt()</code> admite un segundo par&#xE1;metro opcional que indica la base del numero que se le est&#xE1; pasando (decimal, hexadecimal, binario, etc&#x2026;)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;123&apos;</span>)
+<span class="hljs-number">123</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;abc123&apos;</span>)
+<span class="hljs-literal">NaN</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;1abc23&apos;</span>)
+<span class="hljs-number">1</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;123abc&apos;</span>)
+<span class="hljs-number">123</span>
+</code></pre>
+<p>Se recomienda especificar siempre la base (10 normalmente) para <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix" target="_blank">evitar problemas</a> de interpretaciones</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot; 0xF&quot;</span>, <span class="hljs-number">16</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot; F&quot;</span>, <span class="hljs-number">16</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;17&quot;</span>, <span class="hljs-number">8</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-number">021</span>, <span class="hljs-number">8</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;015&quot;</span>, <span class="hljs-number">10</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-number">15.99</span>, <span class="hljs-number">10</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;FXX123&quot;</span>, <span class="hljs-number">16</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;1111&quot;</span>, <span class="hljs-number">2</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;15*3&quot;</span>, <span class="hljs-number">10</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;15e2&quot;</span>, <span class="hljs-number">10</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;15px&quot;</span>, <span class="hljs-number">10</span>);
+<span class="hljs-number">15</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&quot;12&quot;</span>, <span class="hljs-number">13</span>);
+<span class="hljs-number">15</span>
+</code></pre>
+<h3 id="parsefloat"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseFloat" target="_blank">parseFloat()</a></h3>
+<p><code>parseFloat()</code> toma un valor e intenta transformarlo en n&#xFA;mero de coma flotante (con decimales).</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">parseFloat</span>(<span class="hljs-string">&apos;123&apos;</span>)
+<span class="hljs-number">123</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseFloat</span>(<span class="hljs-string">&apos;1.23&apos;</span>)
+<span class="hljs-number">1.23</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseFloat</span>(<span class="hljs-string">&apos;1.23abc.00&apos;</span>)
+<span class="hljs-number">1.23</span>
+&gt;&gt;&gt; <span class="hljs-built_in">parseFloat</span>(<span class="hljs-string">&apos;a.bc1.23&apos;</span>)
+<span class="hljs-literal">NaN</span>
+</code></pre>
+<h3 id="isnan"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/isNaN" target="_blank">isNan()</a></h3>
+<p><code>isNan()</code> comprueba si el valor que se le pasa es un numero v&#xE1;lido (devuelve true en caso de que no lo sea)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">NaN</span>)
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isNaN</span>(<span class="hljs-number">123</span>)
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isNaN</span>(<span class="hljs-number">1.23</span>)
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isNaN</span>(<span class="hljs-built_in">parseInt</span>(<span class="hljs-string">&apos;abc123&apos;</span>))
+<span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="isfinite"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/isFinite" target="_blank">isFinite()</a></h3>
+<p><code>isFinite()</code> comprueba si el valor que se le pasa no es ni Infinity ni NaN</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">isFinite</span>(<span class="hljs-literal">Infinity</span>)
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isFinite</span>(-<span class="hljs-literal">Infinity</span>)
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isFinite</span>(<span class="hljs-number">12</span>)
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isFinite</span>(<span class="hljs-number">1e308</span>)
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-built_in">isFinite</span>(<span class="hljs-number">1e309</span>)
+<span class="hljs-literal">false</span>
+</code></pre>
+<h3 id="encodeuri"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURI" target="_blank">encodeURI()</a></h3>
+<p><code>encodeURI()</code> Nos permite &#x2018;escapar&#x2019; (codificar) una URL reemplazando algunos caracteres por su correspondiente secuencia de escape UTF-&#xAD;&#x2010;8.
+<em>encodeURI()</em> nos devuelve una URL usable (solo codifica algunos caracteres)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;http://www.packtpub.com/scr ipt.php?q=this and that&apos;</span>;
+&gt;&gt;&gt; <span class="hljs-built_in">encodeURI</span>(url);
+http:<span class="hljs-comment">//www.packtpub.com/scr%20ipt.php?q=this%20and%20that</span>
+</code></pre>
+<h3 id="decodeuri"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURI" target="_blank">decodeURI()</a></h3>
+<p><code>decodeURI()</code> Nos permite &#x2018;decodificar&#x2019; un string codificado por <code>encodeURI()</code></p>
+<h3 id="encodeuricomponent-y-decodeuricomponent"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURIComponent" target="_blank">encodeURIComponent()</a> y <a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURIComponent" target="_blank">decodeURIComponent()</a></h3>
+<p><code>encodeURIComponent()</code> y <code>decodeURIComponent()</code> Lo mismo que
+encodeURI()` pero esta funci&#xF3;n codifica (decodifica) TODOS los caracteres transformables</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">encodeURIComponent</span>(url);
+<span class="hljs-string">&quot;http%3A%2F%2Fwww.packtpub.com%2Fscr%20ipt.php%3Fq%3Dthis%20and%20that&quot;</span>
+</code></pre>
+<h3 id="eval"><a href="https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/eval" target="_blank">eval()</a></h3>
+<p><code>eval()</code> toma una cadena de texto y la ejecuta como c&#xF3;digo Javascript</p>
+<p><code>eval()</code> no debe utilizarse b&#xE1;sicamente por 2 motivos:  </p>
+<ul>
+<li>Rendimiento: Es mucho m&#xE1;s lento evaluar c&#xF3;digo &#x201C;en vivo&#x201D; que tenerlo
+directamente en el script  </li>
+<li>Seguridad: Teniendo en cuenta que ejecuta todo lo que se le pase puede ser un agujero de seguridad.  </li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">eval</span>(<span class="hljs-string">&apos;var ii = 2;&apos;</span>)
+&gt;&gt;&gt; ii
+<span class="hljs-number">2</span>
+</code></pre>
+<p><sub><a href="http://bonsaiden.github.com/JavaScript-&#xAD;&#x2010;Garden/#core.eval" target="_blank">http://bonsaiden.github.com/JavaScript-&#xAD;&#x2010;Garden/#core.eval</a></sub></p>
+<h3 id="alert">alert()</h3>
+<p><code>alert()</code> Nos muestra una ventana con un string<br><code>alert()</code> no es parte del core JS pero est&#xE1; disponible en todos los navegadores  </p>
+<p>&#xA1;OJO! <code>alert()</code> para el c&#xF3;digo hasta que se acepte el mensaje  </p>
+<p><br></p>
+<h2 id="&#xE1;mbito-scope-de-las-funciones">&#xC1;mbito (Scope) de las Funciones</h2>
+<p>En javascript las variables se definen en el &#xE1;mbito de una funci&#xF3;n (y no en el &#xE1;mbito de un bloque como ocurre en otros lenguajes)  </p>
+<ul>
+<li>Las <strong>variables globales</strong> son aquellas que se definen fuera de cualquier funci&#xF3;n</li>
+<li>Las <strong>variables locales</strong> son aquellas que se definen dentro de una funci&#xF3;n</li>
+</ul>
+<p><br></p>
+<h2 id="funciones-callback">Funciones Callback</h2>
+<p><em>Las funciones en Javascript son datos</em>, lo que significa que podemos asignarlas a variables igual que cualquier otro valor (y manejarlas como variables)</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>; }
+<span class="hljs-keyword">var</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>; }
+</code></pre>
+<p>Las funciones son datos, pero un tipo especial de datos (<code>typeof &#x2018;function&#x2019;</code>) ya
+que:</p>
+<ul>
+<li>Contienen c&#xF3;digo</li>
+<li>Podemos ejecutarlas</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> sum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{ <span class="hljs-keyword">return</span> a + b; }
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> add = sum;
+&gt;&gt;&gt; <span class="hljs-keyword">delete</span> sum
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> sum;
+<span class="hljs-string">&quot;undefined&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> add;
+<span class="hljs-string">&quot;function&quot;</span>
+&gt;&gt;&gt; add(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+<span class="hljs-number">3</span>
+</code></pre>
+<p>Las <strong>funciones an&#xF3;nimas</strong> son aquellas que no tienen nombre y se pueden utilizar para:</p>
+<ul>
+<li>Pasar esa funci&#xF3;n como argumento de una funci&#xF3;n</li>
+<li>Definir una funci&#xF3;n y ejecutarla inmediatamente</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a</span>)</span>{ <span class="hljs-keyword">return</span> a; }
+</code></pre>
+<p>Cuando pasamos una funci&#xF3;n A como argumento de otra funci&#xF3;n B y B ejecuta A, decimos que A es una <strong><a href="http://stackoverflow.com/questions/483073/getting-&#xAD;&#x2010;a-&#xAD;&#x2010;better-&#xAD;&#x2010;understanding-&#xAD;&#x2010;of-&#xAD;&#x2010;callback-&#xAD;&#x2010;functions-&#xAD;&#x2010;in-&#xAD;&#x2010;javascript" target="_blank">funci&#xF3;n callback</a></strong></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">invoke_and_add</span>(<span class="hljs-params">a, b</span>)</span>{ <span class="hljs-keyword">return</span> a() + b(); }
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">one</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>; }
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">two</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>; }
+&gt;&gt;&gt; invoke_and_add(one, two);
+<span class="hljs-number">3</span>
+&gt;&gt;&gt; invoke_and_add(one, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-number">7</span>;})
+<span class="hljs-number">8</span>
+</code></pre>
+<p><br></p>
+<h2 id="closures">Closures</h2>
+<p>Si definimos una funci&#xF3;n <code>n()</code> dentro de <code>f()</code> , <code>n()</code> tendr&#xE1; acceso tanto a las variables de su scope (&#xE1;mbito) como las del scope de su padre. Esto es lo que se llama <strong>scope chain</strong> (encadenamiento de &#xE1;mbitos)</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">n</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> c = <span class="hljs-number">3</span>;
+  }
+}
+</code></pre>
+<p><sub><a href="http://stackoverflow.com/questions/1484143/scope-&#xAD;&#x2010;chain-&#xAD;&#x2010;in-&#xAD;&#x2010;javascript" target="_blank">http://stackoverflow.com/questions/1484143/scope-&#xAD;&#x2010;chain-&#xAD;&#x2010;in-&#xAD;&#x2010;javascript</a></sub><br><sub><a href="http://www.digital-&#xAD;&#x2010;web.com/articles/scope_in_javascript/" target="_blank">http://www.digital-&#xAD;&#x2010;web.com/articles/scope_in_javascript/</a></sub><br><sub><a href="http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-&#xAD;&#x2010;on-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures.aspx" target="_blank">http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-&#xAD;&#x2010;on-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures.aspx</a></sub><br><sub><a href="http://www.smashingmagazine.com/2009/08/01/what-&#xAD;&#x2010;you-&#xAD;&#x2010;need-&#xAD;&#x2010;to-&#xAD;&#x2010;know-&#xAD;&#x2010;about-&#xAD;&#x2010;javascript-&#xAD;&#x2010;scope/" target="_blank">http://www.smashingmagazine.com/2009/08/01/what-&#xAD;&#x2010;you-&#xAD;&#x2010;need-&#xAD;&#x2010;to-&#xAD;&#x2010;know-&#xAD;&#x2010;about-&#xAD;&#x2010;javascript-&#xAD;&#x2010;scope/</a></sub>  </p>
+<p>Las funciones tienen lo que se llama <strong>lexical scope</strong> (&#xE1;mbito l&#xE9;xico) lo que significa que crean su entorno (scope, a qu&#xE9; variables tienen acceso) cuando son definidas no cuando son ejecutadas</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>; <span class="hljs-keyword">return</span> f2(); }
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f2</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> a; }
+&gt;&gt;&gt; f1();
+a is not defined
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-number">5</span>;
+&gt;&gt;&gt; f1();
+<span class="hljs-number">5</span>
+&gt;&gt;&gt; a = <span class="hljs-number">55</span>;
+&gt;&gt;&gt; f1();
+<span class="hljs-number">55</span>
+&gt;&gt;&gt; <span class="hljs-keyword">delete</span> a;
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; f1();
+a is not defined
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>) </span>{
+  alert(a);
+  <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+  alert(a);
+}
+f();
+</code></pre>
+<p><sub><a href="https://developer.mozilla.org/en/JavaScript/Guide/Closures" target="_blank">https://developer.mozilla.org/en/JavaScript/Guide/Closures</a></sub><br><sub><a href="http://stackoverflow.com/questions/1047454/what-&#xAD;&#x2010;is-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scope" target="_blank">http://stackoverflow.com/questions/1047454/what-&#xAD;&#x2010;is-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scope</a></sub><br><sub><a href="http://ayende.com/Blog/archive/2007/12/13/Javascript-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scopes-&#xAD;&#x2010;and-&#xAD;&#x2010;what-&#xAD;&#x2010;your-&#xAD;&#x2010;momma-&#xAD;&#x2010;thought-&#xAD;&#x2010;you-&#xAD;&#x2010;about.aspx" target="_blank">http://ayende.com/Blog/archive/2007/12/13/Javascript-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scopes-&#xAD;&#x2010;and-&#xAD;&#x2010;what-&#xAD;&#x2010;your-&#xAD;&#x2010;momma-&#xAD;&#x2010;thought-&#xAD;&#x2010;you-&#xAD;&#x2010;about.aspx</a></sub>  </p>
+<p>Un <strong>closure</strong> se crea cuando una funcion mantiene un enlace con el &#xE1;mbito (scope) de la funci&#xF3;n padre incluso despu&#xE9;s de que la funci&#xF3;n padre haya terminado.</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&quot;b&quot;</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> b;
+  }
+}
+&gt;&gt;&gt; b
+b is not defined
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> n = f();
+&gt;&gt;&gt; n();
+<span class="hljs-string">&quot;b&quot;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> n;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&quot;b&quot;</span>;
+  n = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> b;
+  }
+}
+&gt;&gt;&gt; f();
+&gt;&gt;&gt; n();
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">arg</span>) </span>{
+  <span class="hljs-keyword">var</span> n = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> arg;
+  };
+  arg++;
+  <span class="hljs-keyword">return</span> n;
+};
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> m = f(<span class="hljs-number">123</span>);
+&gt;&gt;&gt; m();
+</code></pre>
+<p><sub><a href="http://mark-&#xAD;&#x2010;story.com/posts/view/picking-&#xAD;&#x2010;up-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures-&#xAD;&#x2010;and-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scoping" target="_blank">http://mark-&#xAD;&#x2010;story.com/posts/view/picking-&#xAD;&#x2010;up-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures-&#xAD;&#x2010;and-&#xAD;&#x2010;lexical-&#xAD;&#x2010;scoping</a></sub><br><sub><a href="http://blog.morrisjohns.com/javascript_closures_for_dummies.html" target="_blank">http://blog.morrisjohns.com/javascript_closures_for_dummies.html</a></sub><br><sub><a href="http://stackoverflow.com/questions/111102/how-&#xAD;&#x2010;do-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures-&#xAD;&#x2010;work" target="_blank">http://stackoverflow.com/questions/111102/how-&#xAD;&#x2010;do-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures-&#xAD;&#x2010;work</a></sub><br><sub><a href="http://www.kryogenix.org/code/browser/secrets-&#xAD;&#x2010;of-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures/" target="_blank">http://www.kryogenix.org/code/browser/secrets-&#xAD;&#x2010;of-&#xAD;&#x2010;javascript-&#xAD;&#x2010;closures/</a></sub><br><sub><a href="http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures" target="_blank">http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures</a></sub><br><sub><a href="http://jibbering.com/faq/notes/closures/" target="_blank">http://jibbering.com/faq/notes/closures/</a></sub><br><sub><a href="http://www.bennadel.com/blog/1482-&#xAD;&#x2010;A-&#xAD;&#x2010;Graphical-&#xAD;&#x2010;Explanation-&#xAD;&#x2010;Of-&#x2010;Javascript-&#xAD;&#x2010;Closures-&#xAD;&#x2010;In-&#xAD;&#x2010;A-&#xAD;&#x2010;jQuery-&#xAD;&#x2010;Context.htm" target="_blank">http://www.bennadel.com/blog/1482-&#xAD;&#x2010;A-&#xAD;&#x2010;Graphical-&#xAD;&#x2010;Explanation-&#xAD;&#x2010;Of-&#x2010;Javascript-&#xAD;&#x2010;Closures-&#xAD;&#x2010;In-&#xAD;&#x2010;A-&#xAD;&#x2010;jQuery-&#xAD;&#x2010;Context.htm</a></sub>  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../condiciones_bucles/" class="navigation navigation-prev " aria-label="Previous page: Condiciones y Bucles">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../objetos/" class="navigation navigation-next " aria-label="Next page: Arrays y Objetos">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Funciones","level":"1.6","depth":1,"next":{"title":"Arrays y Objetos","level":"1.7","depth":1,"path":"objetos/README.md","ref":"objetos/README.md","articles":[]},"previous":{"title":"Condiciones y Bucles","level":"1.5","depth":1,"path":"condiciones_bucles/README.md","ref":"condiciones_bucles/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"funciones/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

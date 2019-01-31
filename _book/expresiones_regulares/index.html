@@ -1,0 +1,744 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Expresiones Regulares · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../eventos/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../variable_tipos_datos_operadores/">
+            
+                <a href="../variable_tipos_datos_operadores/">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../condiciones_bucles/">
+            
+                <a href="../condiciones_bucles/">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../funciones/">
+            
+                <a href="../funciones/">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../objetos_globales/">
+            
+                <a href="../objetos_globales/">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../objetos_globales/arrays/">
+            
+                <a href="../objetos_globales/arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../AJAX/">
+            
+                <a href="../AJAX/">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Expresiones Regulares</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="expresiones-regulares">Expresiones Regulares</h1>
+<p><sub><a href="http://regexpal.com/" target="_blank">http://regexpal.com/</a></sub><br><sub><a href="http://www.regular-expressions.info/" target="_blank">http://www.regular-expressions.info/</a></sub><br><sub><a href="http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/" target="_blank">http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/</a></sub><br><sub><a href="http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm" target="_blank">http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm</a></sub><br><sub><a href="http://www.javascriptkit.com/javatutors/redev.shtml" target="_blank">http://www.javascriptkit.com/javatutors/redev.shtml</a></sub>  </p>
+<p>Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.<br>Un expresi&#xF3;n regular consiste en:</p>
+<ul>
+<li>Un <strong>patron</strong> (<em>pattern</em>) que se usa para localizar textos que se ajusten a &#xE9;l</li>
+<li><strong>Modificadores</strong> (opcionales) que nos indican como aplicar el patron</li>
+</ul>
+<p>En Javascript tenemos disponibles <strong>objetos de expresiones regulares</strong> que podemos crear:</p>
+<ul>
+<li>Con la funci&#xF3;n constructora <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp" target="_blank"><code>RegExp</code></a> : <code>new RegExp(&quot;j.*t&quot;)</code> </li>
+<li>Con la notacion literal: <code>/j.*t/</code>;</li>
+</ul>
+<h2 id="propiedades-de-los-objetos-regexp">Propiedades de los Objetos RegExp</h2>
+<p>Los objetos de expresiones regulares tienen las siguientes propiedades:</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/global" target="_blank"><code>global</code></a>: Con <code>false</code> (por defecto) devuelve solo el primer elemento encontrado. Con <code>true</code> devuelve todos los elementos encontrados</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/ignoreCase" target="_blank"><code>ignoreCase</code></a>: Si est&#xE1; a <code>true</code> haremos el matching sensible a mayusculas (por defecto a <code>false</code>)</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/multiline" target="_blank"><code>multiline</code></a>: Si est&#xE1; a <code>true</code> realizar&#xE1; la busqueda entre varias lineas (por defecto a <code>false</code>)</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/lastIndex" target="_blank"><code>lastIndex</code></a>: La posici&#xF3;n por la que empezar la busqueda (por defecto a 0) </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/source" target="_blank"><code>source</code></a>: Contiene la expresion regular </p>
+</li>
+</ul>
+<p>Estas propiedades (excepto <code>lastIndex</code>) no pueden ser modificadas despues de creado el objeto</p>
+<p>Las 3 primeras propiedades representan a los <em>modificadores</em> de la expresion regular:</p>
+<ul>
+<li><strong>g</strong>: global</li>
+<li><strong>i</strong>: ignoreCase</li>
+<li><strong>m</strong>: multiline</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> re = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&apos;j.*t&apos;</span>, <span class="hljs-string">&apos;gmi&apos;</span>);
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; re.global
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; re.global = <span class="hljs-literal">false</span>;
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; re.global
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> re = <span class="hljs-regexp">/j.*t/ig</span>;
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; re.global
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; re.source
+<span class="hljs-string">&quot;j.*t&quot;</span>
+</code></pre>
+<h2 id="m&#xE9;todos-de-los-objetos-regexp">M&#xE9;todos de los Objetos RegExp</h2>
+<p>Los objetos de expresiones regulares tienen los siguientes metodos:</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank"><code>test()</code></a>:Devuelve <code>true</code> si encuentra algo y <code>false</code> en caso contrario</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/exec" target="_blank"><code>exec()</code></a>: Devuelve un array de cadenas que cumplan el patron </p>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-regexp">/j.*t/</span>.test(<span class="hljs-string">&quot;Javascript&quot;</span>)
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-regexp">/j.*t/i</span>.test(<span class="hljs-string">&quot;Javascript&quot;</span>)
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-regexp">/s(amp)le/i</span>.exec(<span class="hljs-string">&quot;Sample text&quot;</span>)
+[<span class="hljs-string">&quot;Sample&quot;</span>, <span class="hljs-string">&quot;amp&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-regexp">/a(b+)a/g</span>.exec(<span class="hljs-string">&quot;_abbba_aba_&quot;</span>)
+[<span class="hljs-string">&quot;abbba&quot;</span>, <span class="hljs-string">&quot;bbb&quot;</span>]
+</code></pre>
+<h2 id="m&#xE9;todos-de-string-que-aceptan-expresiones-regulares">M&#xE9;todos de String que aceptan Expresiones Regulares</h2>
+<p><sub><a href="http://www.javascriptkit.com/javatutors/re3.shtml" target="_blank">http://www.javascriptkit.com/javatutors/re3.shtml</a></sub>  </p>
+<p>Tenemos disponibles los siguientes m&#xE9;todos del objeto <code>String</code> para buscar dentro de un texto mediante expresiones regulares:</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/match" target="_blank"><code>match()</code></a>: Devuelve un array de ocurrencias </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/search" target="_blank"><code>search()</code></a>: Devuelve la posici&#xF3;n de la primera ocurrencia </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/replace" target="_blank"><code>replace()</code></a>: Nos permite sustituir la cadena encontrada por otra cadena   </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split" target="_blank"><code>split()</code></a>: Acepta una expresi&#xF3;n regular para dividir una cadena de texto en elementos de un array</p>
+</li>
+</ul>
+<h3 id="replace"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/replace" target="_blank"><code>replace()</code></a></h3>
+<ul>
+<li>Si omitimos el modificador <strong>g</strong> solo reemplazamos la primera ocurrencia  </li>
+<li>Podemos incluir en la sustituci&#xF3;n la cadena encontrada con <strong>$&amp;</strong>   </li>
+<li>Cuando la expresi&#xF3;n regular contiene grupos podemos acceder a la ocurrencia de cada grupo con <strong>$1, $2</strong>, etc...  </li>
+<li>Al especificar la sustituci&#xF3;n podemos pasar una funci&#xF3;n donde:  <pre><code>1. El _primer parametro_ es la cadena encontrada  
+2. El _&#xFA;ltimo parametro_ es la cadena donde se est&#xE1; buscando  
+3. El _antepenultimo parametro_ es la posici&#xF3;n de la ocurrencia  
+4. El _resto de parametros_ son las ocurrencias de cada grupo del patron  
+</code></pre></li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> s = <span class="hljs-string">&quot;HelloJavaScriptWorld&quot;</span>
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; s.match(<span class="hljs-regexp">/a/</span>);
+[<span class="hljs-string">&quot;a&quot;</span>]
+&gt;&gt;&gt; s.match(<span class="hljs-regexp">/a/g</span>);
+[<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>]
+&gt;&gt;&gt; s.match(<span class="hljs-regexp">/j.*a/i</span>); [<span class="hljs-string">&quot;Java&quot;</span>]
+&gt;&gt;&gt; s.search(<span class="hljs-regexp">/j.*a/i</span>); <span class="hljs-number">5</span>
+&gt;&gt;&gt; s.replace(<span class="hljs-regexp">/[A-Z]/g</span>, <span class="hljs-string">&apos;&apos;</span>);
+<span class="hljs-string">&quot;elloavacriptorld&quot;</span>
+&gt;&gt;&gt; s.replace(<span class="hljs-regexp">/[A-Z]/</span>, <span class="hljs-string">&apos;&apos;</span>); <span class="hljs-string">&quot;elloJavaScriptWorld&quot;</span>
+&gt;&gt;&gt; s.replace(<span class="hljs-regexp">/[A-Z]/g</span>, <span class="hljs-string">&quot;_$&amp;&quot;</span>); <span class="hljs-string">&quot;_Hello_Java_Script_World&quot;</span>
+&gt;&gt;&gt; s.replace(<span class="hljs-regexp">/([A-Z])/g</span>, <span class="hljs-string">&quot;_$1&quot;</span>); <span class="hljs-string">&quot;_Hello_Java_Script_World&quot;</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;juanmanuel.garrido@softonic.com&quot;</span>.replace(<span class="hljs-regexp">/(.*)@.*/</span>, <span class="hljs-string">&quot;$1&quot;</span>);
+<span class="hljs-string">&quot;juanmanuel.garrido&quot;</span>
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">replaceCallback</span>(<span class="hljs-params">match</span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-string">&quot;_&quot;</span> + match.toLowerCase();}
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; s.replace(<span class="hljs-regexp">/[A-Z]/g</span>, replaceCallback); <span class="hljs-string">&quot;_hello_java_script_world&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> sMail = <span class="hljs-string">&quot;juanmanuel.garrido@softonic.com&quot;</span>;
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> rRegExp = <span class="hljs-regexp">/(.*)@(.*)\.(.*)/</span>;
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> fCallback = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ args = <span class="hljs-built_in">arguments</span>; <span class="hljs-keyword">return</span> args[<span class="hljs-number">1</span>] + <span class="hljs-string">&quot; de &quot;</span> + args[<span class="hljs-number">2</span>].toUpperCase(); }
+<span class="hljs-literal">undefined</span>
+&gt;&gt;&gt; sMail.replace( rRegExp, fCallback);
+<span class="hljs-string">&quot;juanmanuel.garrido de SOFTONIC&quot;</span>
+&gt;&gt;&gt; args
+[<span class="hljs-string">&quot;juanmanuel.garrido@softonic.com&quot;</span>, <span class="hljs-string">&quot;juanmanuel.garrido&quot;</span>,
+<span class="hljs-string">&quot;softonic&quot;</span>, <span class="hljs-string">&quot;com&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;juanmanuel.garrido@softonic.com&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> csv = <span class="hljs-string">&apos;one, two,three ,four&apos;</span>; 
+&gt;&gt;&gt; csv.split(<span class="hljs-string">&apos;,&apos;</span>);
+[<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot; two&quot;</span>, <span class="hljs-string">&quot;three &quot;</span>, <span class="hljs-string">&quot;four&quot;</span>]
+&gt;&gt;&gt; csv.split(<span class="hljs-regexp">/\s*,\s*/</span>)
+[<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;test&quot;</span>.replace(<span class="hljs-string">&apos;t&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>)
+<span class="hljs-string">&quot;rest&quot;</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;test&quot;</span>.replace(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&apos;t&apos;</span>), <span class="hljs-string">&apos;r&apos;</span>)
+<span class="hljs-string">&quot;rest&quot;</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;test&quot;</span>.replace(<span class="hljs-regexp">/t/</span>, <span class="hljs-string">&apos;r&apos;</span>)
+<span class="hljs-string">&quot;rest&quot;</span>
+</code></pre>
+<h2 id="sintaxis-de-las-expresiones-regulares">Sintaxis de las Expresiones Regulares</h2>
+<p><sub><a href="http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular" target="_blank">http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular</a></sub><br><sub><a href="http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/" target="_blank">http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/</a></sub><br><sub><a href="http://www.visibone.com/regular-expressions/" target="_blank">http://www.visibone.com/regular-expressions/</a></sub>  </p>
+<h3 id="abc"><code>[abc]</code></h3>
+<p>Busca coincidencias en los caracteres del patron</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;some text&quot;</span>.match(<span class="hljs-regexp">/[otx]/g</span>)
+[<span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>, <span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+</code></pre>
+<h3 id="a-z"><code>[a-z]</code></h3>
+<p>Busca coincidencias en el rango de caractares<br><code>[a-d]</code> es lo mismo que <code>[abcd]</code><br><code>[a-z]</code> busca todas los caracteres en minuscula<br><code>[a-zA-Z0-9_]</code> busca todo los caracteres, numeros y el gui&#xF3;n bajo  </p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/[a-z]/g</span>)
+[<span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;m&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/[a-zA-Z]/g</span>)
+[<span class="hljs-string">&quot;S&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;m&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;T&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+</code></pre>
+<h3 id="&#xFFFC;&#xFFFC;abc">&#xFFFC;&#xFFFC;<code>[^abc]</code></h3>
+<p>Devuelve lo que NO coincida con el patron</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/[^a-z]/g</span>)
+[<span class="hljs-string">&quot;S&quot;</span>, <span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;T&quot;</span>]
+</code></pre>
+<h3 id="ab"><code>a|b</code></h3>
+<p>Devuelve <em>a</em> o <em>b</em> (la barra indica OR)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/t|T/g</span>);
+[<span class="hljs-string">&quot;T&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/t|T|Some/g</span>);
+[<span class="hljs-string">&quot;Some&quot;</span>, <span class="hljs-string">&quot;T&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+</code></pre>
+<h3 id="ab"><code>a(?=b)</code></h3>
+<p>Devuelve <em>a</em> solamente si est&#xE1; seguida de <em>b</em></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/Some(?=Tex)/g</span>);
+<span class="hljs-literal">null</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/Some(?= Tex)/g</span>);
+[<span class="hljs-string">&quot;Some&quot;</span>]
+</code></pre>
+<h3 id="ab"><code>a(?!b)</code></h3>
+<p>Devuelve <em>a</em> solamente si NO est&#xE1; seguida de <em>b</em></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/Some(?! Tex)/g</span>);
+<span class="hljs-literal">null</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;Some Text&quot;</span>.match(<span class="hljs-regexp">/Some(?!Tex)/g</span>);
+[<span class="hljs-string">&quot;Some&quot;</span>]
+</code></pre>
+<h3 id=""><code>\</code></h3>
+<p>Car&#xE1;cter de escape utilizado para localizar caracteres especiales utilizados en el patron como literales</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2&quot;</span>.match(<span class="hljs-regexp">/[2-3]/g</span>)
+[<span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2&quot;</span>.match(<span class="hljs-regexp">/[2\-3]/g</span>)
+[<span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;-&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>]
+</code></pre>
+<h3 id="n"><code>\n</code></h3>
+<p>&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;
+Nueva linea</p>
+<h3 id="r"><code>\r</code></h3>
+<p>Retorno de carro (Para comenzar una nueva linea se usa <code>\r\n</code> en Windows, <code>\n</code> en Unix y <code>\r</code> en Mac)</p>
+<h3 id="f"><code>\f</code></h3>
+<p>Salto de pagina</p>
+<h3 id="t"><code>\t</code></h3>
+<p>Tabulaci&#xF3;n</p>
+<h3 id="v"><code>\v</code></h3>
+<p>Tabulaci&#xF3;n Vertical</p>
+<h3 id="s"><code>\s</code></h3>
+<p>Espacio en blanco o cualquiera de las 5 secuencias de escape de arriba</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2\n D2&quot;</span>.match(<span class="hljs-regexp">/\s/g</span>)
+[<span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot; &quot;</span>]
+</code></pre>
+<h3 id="s"><code>\S</code></h3>
+<p>Lo contrario de lo de arriba. Devuelve todo excepto espacios en blanco y las 5 secuencias de escape de antes. Lo mismo que <code>[^\s]</code></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2\n D2&quot;</span>.match(<span class="hljs-regexp">/\S/g</span>)
+[<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>]
+</code></pre>
+<h3 id="w"><code>\w</code></h3>
+<p>Cualquier letra, numero o gui&#xF3;n bajo. Lo mismo que <code>[A-Za-z0-9_]</code></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some text!&quot;</span>.match(<span class="hljs-regexp">/\w/g</span>)
+[<span class="hljs-string">&quot;S&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;m&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>, <span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>]
+</code></pre>
+<h3 id="w"><code>\W</code></h3>
+<p>Lo contrario de <code>\w</code></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;Some text!&quot;</span>.match(<span class="hljs-regexp">/\W/g</span>)
+[<span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;!&quot;</span>]
+</code></pre>
+<h3 id="d"><code>\d</code></h3>
+<p>Localiza un numero. Lo mismo que <code>[0-9]</code> </p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/\d/g</span>)
+[<span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;3&quot;</span>]
+</code></pre>
+<h3 id="d"><code>\D</code></h3>
+<p>Lo contrario de <code>\d</code>. Localiza caracteres no-numericos. Lo mismo que <code>[^0-9]</code>  o <code>[^\d]</code></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/\D/g</span>)
+[<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;-&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;n&quot;</span>, <span class="hljs-string">&quot;d&quot;</span>, <span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;-&quot;</span>, <span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;O&quot;</span>]
+</code></pre>
+<h3 id="b"><code>\b</code></h3>
+<p>Coincide con un limite de palabra (espacio, puntuaci&#xF3;n, gui&#xF3;n...)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[RD]2/g</span>)
+[<span class="hljs-string">&quot;R2&quot;</span>, <span class="hljs-string">&quot;D2&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[RD]2\b/g</span>)
+[<span class="hljs-string">&quot;D2&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[RD]2\b/g</span>)
+[<span class="hljs-string">&quot;R2&quot;</span>, <span class="hljs-string">&quot;D2&quot;</span>]
+</code></pre>
+<h3 id="b"><code>\B</code></h3>
+<p>Lo contrario de <code>\b</code> </p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[RD]2\B/g</span>)
+<span class="hljs-literal">null</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[RD]2\B/g</span>)
+[<span class="hljs-string">&quot;R2&quot;</span>]
+</code></pre>
+<h3 id=""><code>^</code></h3>
+<p>Representa el principio de la cadena donde se est&#xE1; buscando.
+Si tenemos el modificador <code>m</code> representa el principio de cada linea.</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular\nregular\nexpression&quot;</span>.match(<span class="hljs-regexp">/r/g</span>);
+[<span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular\nregular\nexpression&quot;</span>.match(<span class="hljs-regexp">/^r/g</span>);
+[<span class="hljs-string">&quot;r&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular\nregular\nexpression&quot;</span>.match(<span class="hljs-regexp">/^r/mg</span>);
+[<span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>]
+</code></pre>
+<h3 id=""><code>$</code></h3>
+<p>Representa el final de la cadena donde se est&#xE1; buscando.
+Si tenemos el modificador <code>m</code> representa el final de cada linea.</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular\nregular\nexpression&quot;</span>.match(<span class="hljs-regexp">/r$/g</span>);
+<span class="hljs-literal">null</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular\nregular\nexpression&quot;</span>.match(<span class="hljs-regexp">/r$/mg</span>);
+[<span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>]
+</code></pre>
+<h3 id=""><code>.</code></h3>
+<p>Representa a cualquier car&#xE1;cter excepto la nueva linea y el retorno de carro</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular&quot;</span>.match(<span class="hljs-regexp">/r./g</span>);
+[<span class="hljs-string">&quot;re&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular&quot;</span>.match(<span class="hljs-regexp">/r.../g</span>);
+[<span class="hljs-string">&quot;regu&quot;</span>]
+</code></pre>
+<h3 id=""><code>*</code></h3>
+<p>Hace matching si el patron precedente ocurre 0 o m&#xE1;s veces.<br><code>/.*/</code> devolver&#xE1; todo incluido nada (cadena vacia)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;&quot;</span>.match(<span class="hljs-regexp">/.*/</span>)
+[<span class="hljs-string">&quot;&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;anything&quot;</span>.match(<span class="hljs-regexp">/.*/</span>)
+[<span class="hljs-string">&quot;anything&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;anything&quot;</span>.match(<span class="hljs-regexp">/n.*h/</span>)
+[<span class="hljs-string">&quot;nyth&quot;</span>]
+</code></pre>
+<h3 id=""><code>?</code></h3>
+<p>Hace matching si el patron precedente ocurre 0 o 1 vez.</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;anything&quot;</span>.match(<span class="hljs-regexp">/ny?/g</span>)
+[<span class="hljs-string">&quot;ny&quot;</span>, <span class="hljs-string">&quot;n&quot;</span>]
+</code></pre>
+<h3 id=""><code>+</code></h3>
+<p>Hace matching si el patron precedente ocurre 1 o m&#xE1;s veces (al menos una vez).</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;anything&quot;</span>.match(<span class="hljs-regexp">/ny+/g</span>)
+[<span class="hljs-string">&quot;ny&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[a-z]/gi</span>)
+[<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;n&quot;</span>, <span class="hljs-string">&quot;d&quot;</span>, <span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;O&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;R2-D2 and C-3PO&quot;</span>.match(<span class="hljs-regexp">/[a-z]+/gi</span>)
+[<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;and&quot;</span>, <span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;PO&quot;</span>]
+</code></pre>
+<h3 id="n"><code>{n}</code></h3>
+<p>Hace matching si el patron precedente ocurre exactamente n veces.</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.match(<span class="hljs-regexp">/s/g</span>)
+[<span class="hljs-string">&quot;s&quot;</span>, <span class="hljs-string">&quot;s&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.match(<span class="hljs-regexp">/s{2}/g</span>)
+[<span class="hljs-string">&quot;ss&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.match(<span class="hljs-regexp">/\b\w{3}/g</span>)
+[<span class="hljs-string">&quot;reg&quot;</span>, <span class="hljs-string">&quot;exp&quot;</span>]
+</code></pre>
+<h3 id="minmax"><code>{min,max}</code></h3>
+<p>Hace matching si el patron precedente ocurre entre min y max veces.<br>Se puede omitir max (solo tendr&#xE1; minimo) No se puede omitir min  </p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;doooooooooodle&quot;</span>.match(<span class="hljs-regexp">/o/g</span>)
+[<span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;doooooooooodle&quot;</span>.match(<span class="hljs-regexp">/o{2}/g</span>)
+[<span class="hljs-string">&quot;oo&quot;</span>, <span class="hljs-string">&quot;oo&quot;</span>, <span class="hljs-string">&quot;oo&quot;</span>, <span class="hljs-string">&quot;oo&quot;</span>, <span class="hljs-string">&quot;oo&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;doooooooooodle&quot;</span>.match(<span class="hljs-regexp">/o{2,}/g</span>)
+[<span class="hljs-string">&quot;oooooooooo&quot;</span>]
+&gt;&gt;&gt; <span class="hljs-string">&quot;doooooooooodle&quot;</span>.match(<span class="hljs-regexp">/o{2,6}/g</span>)
+[<span class="hljs-string">&quot;oooooo&quot;</span>, <span class="hljs-string">&quot;oooo&quot;</span>]
+</code></pre>
+<h3 id="pattern"><code>(pattern)</code></h3>
+<p>Cuando el patr&#xF3;n est&#xE1; en parentesis, se captura y se guarda para poder utilizarlo en sustituciones (captura de patrones).<br>Estas capturas estan disponibles en <code>$1</code>, <code>$2</code>,... <code>$9</code></p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.replace(<span class="hljs-regexp">/(r)/g</span>, <span class="hljs-string">&apos;$1$1&apos;</span>)
+<span class="hljs-string">&quot;rregularr exprression&quot;</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.replace(<span class="hljs-regexp">/(r)(e)/g</span>, <span class="hljs-string">&apos;$2$1&apos;</span>)
+<span class="hljs-string">&quot;ergular experssion&quot;</span>
+</code></pre>
+<h3 id="pattern"><code>{?:pattern}</code></h3>
+<p>Patr&#xF3;n no capturable (no disponible en <code>$1</code>, <code>$2</code>, ...)</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;regular expression&quot;</span>.replace(<span class="hljs-regexp">/(?:r)(e)/g</span>, <span class="hljs-string">&apos;$1$1&apos;</span>)
+<span class="hljs-string">&quot;eegular expeession&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../eventos/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Events">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Expresiones Regulares","level":"1.13","depth":1,"previous":{"title":"Events","level":"1.12","depth":1,"path":"eventos/README.md","ref":"eventos/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"expresiones_regulares/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

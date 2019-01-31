@@ -1,0 +1,7 @@
+body {
+  background: red;
+}
+.page-toc {
+  border: 1px solid black;
+  float: none;
+}

@@ -1,0 +1,898 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Objetos Globales · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="arrays/" />
+    
+    
+    <link rel="prev" href="../objetos/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prologo/">
+            
+                <a href="../prologo/">
+            
+                    
+                    Prólogo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../generalidades/">
+            
+                <a href="../generalidades/">
+            
+                    
+                    Ideas Claras de Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../variable_tipos_datos_operadores/">
+            
+                <a href="../variable_tipos_datos_operadores/">
+            
+                    
+                    Variables y Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../condiciones_bucles/">
+            
+                <a href="../condiciones_bucles/">
+            
+                    
+                    Condiciones y Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../funciones/">
+            
+                <a href="../funciones/">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../objetos/">
+            
+                <a href="../objetos/">
+            
+                    
+                    Arrays y Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Objetos Globales
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="arrays/">
+            
+                <a href="arrays/">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../entorno_navegador/">
+            
+                <a href="../entorno_navegador/">
+            
+                    
+                    El entorno del Navegador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JSON/">
+            
+                <a href="../JSON/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../AJAX/">
+            
+                <a href="../AJAX/">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../eventos/">
+            
+                <a href="../eventos/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../expresiones_regulares/">
+            
+                <a href="../expresiones_regulares/">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Objetos Globales</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="objetos-globales">Objetos Globales</h1>
+<ul>
+<li><p>Son los objetos que tenemos disponibles en el &#xE1;mbito global (objetos primitivos)</p>
+</li>
+<li><p>Los podemos dividir en 3 grupos</p>
+<ul>
+<li><em>Objetos contenedores de datos</em>:  Object, Array, Function, Boolean, Number</li>
+<li><em>Objetos de utilidades</em>: Math, Date, RegExp</li>
+<li><em>Objetos de errores</em>: Error</li>
+</ul>
+</li>
+</ul>
+<h2 id="object"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a></h2>
+<ul>
+<li><p><strong>Object</strong> es el padre de todos los objetos Javascript, es decir, cualquier objeto hereda de &#xE9;l</p>
+</li>
+<li><p>Para crear un objeto vacio podemos usar:</p>
+<ul>
+<li>La notacion literal :  <code>var o = {}</code></li>
+<li>La funcion constructora Object():  <code>var o = new Object();</code></li>
+</ul>
+</li>
+<li><p>Un objeto contiene las siguientes propiedades y metodos:</p>
+<ul>
+<li>La propiedad <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor" target="_blank"><code>o.constructor</code></a> con la funci&#xF3;n constructora</li>
+<li>El m&#xE9;todo <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString" target="_blank"><code>o.toString()</code></a> que devuelve el objeto en formato texto</li>
+<li>El m&#xE9;todo <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf" target="_blank"><code>o.valueOf()</code></a> que devuelve el valor del objeto (normalmente o)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> o = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+&gt;&gt;&gt; o.toString()
+&#x201C;[object <span class="hljs-built_in">Object</span>]&#x201D;
+
+&gt;&gt;&gt; o.valueOf() === o
+<span class="hljs-literal">true</span>
+</code></pre>
+<h2 id="array"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a></h2>
+<ul>
+<li><p>Para crear arrays podemos usar:</p>
+<ul>
+<li>La notacion literal :  <code>var a = []</code></li>
+<li>La funcion constructora Array():  <code>var o = new Array();</code></li>
+</ul>
+</li>
+<li><p>Podemos pasarle parametros al constructor <code>Array()</code></p>
+<ul>
+<li>Varios parametros: Seran asignados como elementos al array</li>
+<li>Un numero: Se considerar&#xE1; el tama&#xF1;o del array</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> a = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-string">&apos;four&apos;</span>);
+&gt;&gt;&gt; a;
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&quot;four&quot;</span>]
+
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> a2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">5</span>);
+&gt;&gt;&gt; a2;
+[<span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>]
+</code></pre>
+<ul>
+<li>Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre <code>Object()</code></li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> a;
+<span class="hljs-string">&quot;object&quot;</span>
+
+&gt;&gt;&gt; a.toString();
+<span class="hljs-string">&quot;1,2,3,four&quot;</span>
+&gt;&gt;&gt; a.valueOf()
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&quot;four&quot;</span>]
+&gt;&gt;&gt; a.constructor
+<span class="hljs-built_in">Array</span>()
+</code></pre>
+<ul>
+<li><p>Los arrays disponen de la propiedad <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length" target="_blank"><code>length</code></a>  </p>
+<ul>
+<li>Nos devuelve el tama&#xF1;o del array (numero de elementos)</li>
+<li>Podemos  modificarlo y cambiar el tama&#xF1;o del array</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; a[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>; 
+&gt;&gt;&gt; a.prop = <span class="hljs-number">2</span>; 
+
+&gt;&gt;&gt; a.length
+<span class="hljs-number">1</span>
+&gt;&gt;&gt; a.length = <span class="hljs-number">5</span>
+<span class="hljs-number">5</span>
+&gt;&gt;&gt; a
+[<span class="hljs-number">1</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>]
+
+&gt;&gt;&gt; a.length = <span class="hljs-number">2</span>;
+<span class="hljs-number">2</span>
+&gt;&gt;&gt; a
+[<span class="hljs-number">1</span>, <span class="hljs-literal">undefined</span>]
+</code></pre>
+<p>Los arrays disponen de unos cuantos metodos interesantes:</p>
+<ul>
+<li><code>push()</code></li>
+<li><code>pop()</code></li>
+<li><code>sort()</code></li>
+<li><code>join()</code></li>
+<li><code>slice()</code></li>
+<li><code>splice()</code></li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> a = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&apos;test&apos;</span>];
+
+&gt;&gt;&gt; a.push(<span class="hljs-string">&apos;new&apos;</span>) 
+<span class="hljs-number">6</span>
+&gt;&gt;&gt; a 
+[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>, <span class="hljs-string">&quot;new&quot;</span>]
+
+&gt;&gt;&gt; a.pop() 
+<span class="hljs-string">&quot;new&quot;</span>
+&gt;&gt;&gt; a 
+[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>]
+
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> b = a.sort();
+&gt;&gt;&gt; b
+[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>]
+&gt;&gt;&gt; a
+[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>]
+
+&gt;&gt;&gt; a.join(<span class="hljs-string">&apos; is not &apos;</span>);
+<span class="hljs-string">&quot;1 is not 3 is not 5 is not 7 is not test&quot;</span>
+
+&gt;&gt;&gt; b = a.slice(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>);
+[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>]
+&gt;&gt;&gt; a
+[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>]
+
+&gt;&gt;&gt; b = a.splice(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">101</span>, <span class="hljs-number">102</span>);
+[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>]
+&gt;&gt;&gt; a
+[<span class="hljs-number">1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">101</span>, <span class="hljs-number">102</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;test&quot;</span>]
+</code></pre>
+<p><a href="https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays" target="_blank">&gt;&gt;&gt; more about arrays methods</a></p>
+<h2 id="function"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a></h2>
+<ul>
+<li>Las funciones son objetos</li>
+<li>Podemos crear funciones con la funci&#xF3;n constructora <code>Function()</code> (aunque este metodo no se recomienda ya que internamente hace un <em>eval()</em> )</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">a, b</span>) </span>{<span class="hljs-keyword">return</span> a + b;};
+&gt;&gt;&gt; sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+<span class="hljs-number">3</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> sum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{<span class="hljs-keyword">return</span> a + b;};
+&gt;&gt;&gt; sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+<span class="hljs-number">3</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> sum = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;return a + b;&apos;</span>);
+&gt;&gt;&gt; sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+<ul>
+<li>Las funciones disponen de las siguientes propiedades:<ul>
+<li>La propiedad <code>constructor</code> que contiene una referencia a la funcion constructora <em>Function()</em> </li>
+<li>La propiedad <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/length" target="_blank"><code>length</code></a> que contiene el numero de parametros que acepta la funci&#xF3;n </li>
+<li>La propiedad <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/caller" target="_blank"><code>caller</code></a> (no standard) que contiene una referencia a la funcion que llam&#xF3; a esta funci&#xF3;n </li>
+<li>La propiedad <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/prototype" target="_blank"><code>prototype</code></a> que contiene un objeto.  <ul>
+<li>S&#xF3;lo es util cuando utilizamos una funcion como constructora.  </li>
+<li>Todos lo objetos creados con una funci&#xF3;n constructora mantienen una referencia a su propiedad <code>prototype</code> y pueden usar sus propiedades como si fueran propias.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myfunc</span>(<span class="hljs-params">a</span>)</span>{ <span class="hljs-keyword">return</span> a; }
+&gt;&gt;&gt; myfunc.constructor
+<span class="hljs-built_in">Function</span>()
+
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myfunc</span>(<span class="hljs-params">a, b, c</span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>; }
+&gt;&gt;&gt; myfunc.length
+<span class="hljs-number">3</span>
+
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">A</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> A.caller; }
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">B</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> A(); }
+&gt;&gt;&gt; B()
+B()
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> some_obj = { 
+  name: <span class="hljs-string">&apos;Ninja&apos;</span>, 
+  say: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ 
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;I am a &apos;</span> + <span class="hljs-keyword">this</span>.name; 
+  }
+}
+&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>(<span class="hljs-params"></span>)</span>{} 
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> F.prototype 
+<span class="hljs-string">&quot;object&quot;</span>
+&gt;&gt;&gt; F.prototype = some_obj;
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> F();
+&gt;&gt;&gt; obj.name 
+<span class="hljs-string">&quot;Ninja&quot;</span>
+&gt;&gt;&gt; obj.say() 
+<span class="hljs-string">&quot;I am a Ninja&quot;</span>
+</code></pre>
+<ul>
+<li>Las funciones disponen de los siguientes m&#xE9;todos:<ul>
+<li>El m&#xE9;todo <code>toString()</code> que devuelve el c&#xF3;digo fuente de la funci&#xF3;n</li>
+<li>Los m&#xE9;todos <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call" target="_blank"><code>call()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/apply" target="_blank"><code>apply()</code></a> que ejecutan metodos de otros objetos especificando el contexto (especificamos un <code>this</code> diferente)<ul>
+<li>Estos dos m&#xE9;todos hacen lo mismo pero el formato en que reciben los argumentos es diferente</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; function myfunc(a, b, c) {return a + b + c;}
+&gt;&gt;&gt; myfunc.toString()
+&quot;function myfunc(a, b, c) { 
+return a + b + c; 
+}&quot;
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> some_obj = { 
+  name: <span class="hljs-string">&apos;Ninja&apos;</span>, 
+  say: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">who</span>)</span>{ 
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Haya &apos;</span> + who + <span class="hljs-string">&apos;, I am a &apos;</span> + <span class="hljs-keyword">this</span>.name; 
+  }
+}
+&gt;&gt;&gt; some_obj.say(<span class="hljs-string">&apos;Dude&apos;</span>); 
+<span class="hljs-string">&quot;Haya Dude, I am a Ninja&quot;</span>
+
+&gt;&gt;&gt; my_obj = {name: <span class="hljs-string">&apos;Scripting guru&apos;</span>};
+&gt;&gt;&gt; some_obj.say.call(my_obj, <span class="hljs-string">&apos;Dude&apos;</span>); 
+<span class="hljs-string">&quot;Haya Dude, I am a Scripting guru&quot;</span>
+
+some_obj.someMethod.apply(my_obj, [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]);
+some_obj.someMethod.call(my_obj, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>);
+</code></pre>
+<ul>
+<li>Las funciones disponen del objeto <code>arguments</code> que (ademas de <code>length</code>) tiene la propiedad <code>callee</code> que contiene una referencia a la funcion llamada (a si misma)</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-built_in">arguments</span>.callee;}
+&gt;&gt;&gt; f() 
+f()
+</code></pre>
+<pre><code class="lang-javascript">( 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">count</span>)</span>{ 
+    <span class="hljs-keyword">if</span> (count &lt;= <span class="hljs-number">5</span>) { 
+      <span class="hljs-built_in">console</span>.log(count); 
+      <span class="hljs-built_in">arguments</span>.callee(++count); 
+    } 
+  }
+)(<span class="hljs-number">1</span>)
+</code></pre>
+<h2 id="boolean"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" target="_blank">Boolean</a></h2>
+<ul>
+<li>El objeto <em>Boolean</em> es un contenedor para un valor de tipo booleano<br>Podemos crear objetos <em>Boolean</em> con la funci&#xF3;n constructora <code>Boolean()</code></li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>();
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> b 
+<span class="hljs-string">&quot;object&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> b.valueOf() 
+<span class="hljs-string">&quot;boolean&quot;</span>
+&gt;&gt;&gt; b.valueOf() 
+<span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>La funci&#xF3;n <code>Boolean</code> usada como funci&#xF3;n normal (sin <code>new</code>) nos devuelve el valor pasado como parametro convertido a booleano</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-built_in">Boolean</span>(<span class="hljs-string">&quot;test&quot;</span>) 
+<span class="hljs-literal">true</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Boolean</span>(<span class="hljs-string">&quot;&quot;</span>) 
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Boolean</span>({}) 
+<span class="hljs-literal">true</span>
+</code></pre>
+<h2 id="number"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a></h2>
+<ul>
+<li>La funci&#xF3;n <code>Number()</code> puede ser usada:<ul>
+<li>C&#xF3;mo una <em>funci&#xF3;n normal</em> para convertir valores a n&#xFA;mero</li>
+<li>C&#xF3;mo una <em>funci&#xF3;n constructora</em> (con <code>new</code>) para crear objetos</li>
+</ul>
+</li>
+<li>Los objetos n&#xFA;mero disponen de los m&#xE9;todos: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed" target="_blank"><code>toFixed()</code></a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision" target="_blank"><code>toPrecision()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential" target="_blank"><code>toExponential()</code></a></li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> n = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">123.456</span>)
+&gt;&gt;&gt; n.toFixed(<span class="hljs-number">1</span>) 
+<span class="hljs-string">&quot;123.5&quot;</span>
+
+&gt;&gt;&gt; (<span class="hljs-number">12345</span>).toExponential() 
+<span class="hljs-string">&quot;1.2345e+4&quot;</span>
+</code></pre>
+<ul>
+<li>El m&#xE9;todo <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString" target="_blank"><code>toString()</code></a> de un objeto numero nos permite transformar un numero a una base determinada </li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> n = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">255</span>);
+&gt;&gt;&gt; n.toString(); 
+<span class="hljs-string">&quot;255&quot;</span>
+&gt;&gt;&gt; n.toString(<span class="hljs-number">10</span>); 
+<span class="hljs-string">&quot;255&quot;</span>
+&gt;&gt;&gt; n.toString(<span class="hljs-number">16</span>); 
+<span class="hljs-string">&quot;ff&quot;</span>
+&gt;&gt;&gt; (<span class="hljs-number">3</span>).toString(<span class="hljs-number">2</span>); 
+<span class="hljs-string">&quot;11&quot;</span>
+&gt;&gt;&gt; (<span class="hljs-number">3</span>).toString(<span class="hljs-number">10</span>); 
+<span class="hljs-string">&quot;3&quot;</span>
+</code></pre>
+<h2 id="string"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" target="_blank">String</a></h2>
+<ul>
+<li>Podemos crear objetos String con la funci&#xF3;n constructora <code>String()</code><br>Un objeto <em>String</em> NO es un dato de tipo primitivo string (<code>valueOf()</code>)</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> primitive = <span class="hljs-string">&apos;Hello&apos;</span>;
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> primitive; 
+<span class="hljs-string">&quot;string&quot;</span>
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&apos;world&apos;</span>);
+&gt;&gt;&gt; <span class="hljs-keyword">typeof</span> obj; 
+<span class="hljs-string">&quot;object&quot;</span>
+
+&gt;&gt;&gt; <span class="hljs-built_in">Boolean</span>(<span class="hljs-string">&quot;&quot;</span>) 
+<span class="hljs-literal">false</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Boolean</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;&quot;</span>)) 
+<span class="hljs-literal">true</span>
+</code></pre>
+<ul>
+<li>Un objeto string es parecido a un array de caracteres:<ul>
+<li>Cada car&#xE1;cter tiene una posici&#xF3;n indexada</li>
+<li>Tiene disponible la propiedad length</li>
+</ul>
+</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; obj[<span class="hljs-number">0</span>] 
+<span class="hljs-string">&quot;w&quot;</span>
+&gt;&gt;&gt; obj[<span class="hljs-number">4</span>] 
+<span class="hljs-string">&quot;d&quot;</span>
+&gt;&gt;&gt; obj.length 
+<span class="hljs-number">5</span>
+</code></pre>
+<ul>
+<li>Aunque los m&#xE9;todos pertenezcan al objeto String, podemos utilizarlos tambi&#xE9;n directamente en datos de tipo primitivo string (se crea el objeto internamente)</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-string">&quot;potato&quot;</span>.length 
+<span class="hljs-number">6</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;tomato&quot;</span>[<span class="hljs-number">0</span>] 
+<span class="hljs-string">&quot;t&quot;</span>
+&gt;&gt;&gt; <span class="hljs-string">&quot;potato&quot;</span>[<span class="hljs-string">&quot;potato&quot;</span>.length - <span class="hljs-number">1</span>] 
+<span class="hljs-string">&quot;o&quot;</span>
+</code></pre>
+<ul>
+<li><p>Los objetos string disponen de los siguientes m&#xE9;todos:</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toUpperCase" target="_blank"><code>toUpperCase()</code></a>  devuelve el string convertido a may&#xFA;sculas</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toLowerCase" target="_blank"><code>toLowerCase()</code></a>  devuelve el string convertido a minusculas</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/charAt" target="_blank"><code>charAt()</code></a>  devuelve el car&#xE1;cter encontrado en la posici&#xF3;n indicada</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank"><code>indexOf()</code></a> busca una cadena de texto en el string y devuelve la posici&#xF3;n donde la encuentra</p>
+<ul>
+<li>Si no encuentra nada devuelve -1 </li>
+</ul>
+</li>
+<li><p><code>lastIndexOf()</code> empieza la b&#xFA;squeda desde el final de la cadena  </p>
+<ul>
+<li>Si no encuentra nada devuelve -1 </li>
+</ul>
+<p>Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es &#x2192;  <code>if ( s.toLowerCase().indexOf(&apos;couch&apos;) !== -1 ) {...}</code></p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice" target="_blank"><code>slice()</code></a> devuelve un trozo de la cadena de texto </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split" target="_blank"><code>split()</code></a> transforma el string en un array utilizando un string como separador </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/concat" target="_blank"><code>concat()</code></a> une strings</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> s = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;Couch potato&quot;</span>);
+&gt;&gt;&gt; s.toUpperCase() 
+<span class="hljs-string">&quot;COUCH POTATO&quot;</span>
+&gt;&gt;&gt; s.toLowerCase() 
+<span class="hljs-string">&quot;couch potato&quot;</span>
+&gt;&gt;&gt; s.charAt(<span class="hljs-number">0</span>); 
+<span class="hljs-string">&quot;C&quot;</span>
+&gt;&gt;&gt; s.indexOf(<span class="hljs-string">&apos;o&apos;</span>) 
+<span class="hljs-number">1</span>
+&gt;&gt;&gt; s.lastIndexOf(<span class="hljs-string">&apos;o&apos;</span>) 
+<span class="hljs-number">11</span>
+&gt;&gt;&gt; s.slice(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>) 
+<span class="hljs-string">&quot;ouch&quot;</span>
+&gt;&gt;&gt; s.split(<span class="hljs-string">&quot; &quot;</span>) 
+[<span class="hljs-string">&quot;Couch&quot;</span>, <span class="hljs-string">&quot;potato&quot;</span>]
+&gt;&gt;&gt; s.concat(<span class="hljs-string">&quot;es&quot;</span>) 
+<span class="hljs-string">&quot;Couch potatoes&quot;</span>
+</code></pre>
+<h2 id="math"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math" target="_blank">Math</a></h2>
+<ul>
+<li><p><em>Math</em> es un objeto con propiedades y m&#xE9;todos para usos matem&#xE1;ticos
+  No es constructor de otros objetos</p>
+</li>
+<li><p>Algunos m&#xE9;todos interesantes de Math son:</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/random" target="_blank"><code>random()</code></a>  genera n&#xFA;meros aleatorios entre 0 y 1</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round" target="_blank"><code>round()</code></a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/floor" target="_blank"><code>floor()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/ceil" target="_blank"><code>ceil()</code></a> para redondear numeros  </p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min" target="_blank"><code>min()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max" target="_blank"><code>max()</code></a>  devuelven el minimo y el m&#xE1;ximo de una serie de n&#xFA;meros pasados como parametros</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/pow" target="_blank"><code>pow()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/sqrt" target="_blank"><code>sqrt()</code></a>  devuelve la potencia y la ra&#xED;z cuadrada respectivamente </p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="date"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a></h2>
+<ul>
+<li><code>Date()</code> es una funci&#xF3;n constructora que crea objetos Date<br>  Podemos crear objetos Date nuevo pas&#xE1;ndole:<ul>
+<li><em>Nada</em> (tomar&#xE1; por defecto la fecha actual) </li>
+<li><em>Una fecha</em> en formato texto</li>
+<li><em>Valores separados</em> que representan: A&#xF1;o, Mes (0-11), Dia (1-31), Hora (0-23), Minutes (0-59), Segundos(0-59) y Milisegundos (0-999)</li>
+<li>Un valor <em>timestamp</em></li>
+</ul>
+</li>
+</ul>
+<p>Ejemplo (Firebug muestra el resultado del metodo toString sobre un objeto date):</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>() 
+Tue Jan <span class="hljs-number">08</span> <span class="hljs-number">2008</span> <span class="hljs-number">01</span>:<span class="hljs-number">10</span>:<span class="hljs-number">42</span> GMT<span class="hljs-number">-0800</span> (Pacific Standard Time) 
+&gt;&gt;&gt; <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2009 11 12&apos;</span>) 
+Thu Nov <span class="hljs-number">12</span> <span class="hljs-number">2009</span> <span class="hljs-number">00</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span> GMT<span class="hljs-number">-0800</span> (Pacific Standard Time)
+&gt;&gt;&gt; <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2008</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">17</span>, <span class="hljs-number">05</span>, <span class="hljs-number">03</span>, <span class="hljs-number">120</span>) 
+Tue Jan <span class="hljs-number">01</span> <span class="hljs-number">2008</span> <span class="hljs-number">17</span>:<span class="hljs-number">05</span>:<span class="hljs-number">03</span> GMT<span class="hljs-number">-0800</span> (Pacific Standard Time)
+&gt;&gt;&gt; <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">1199865795109</span>) 
+Wed Jan <span class="hljs-number">09</span> <span class="hljs-number">2008</span> <span class="hljs-number">00</span>:<span class="hljs-number">03</span>:<span class="hljs-number">15</span> GMT<span class="hljs-number">-0800</span> (Pacific Standard Time)
+</code></pre>
+<ul>
+<li><p>Algunos m&#xE9;todos para trabajar con objetos Date son:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setMonth" target="_blank"><code>setMonth()</code></a> y <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getMonth" target="_blank"><code>getMonth()</code></a> escriben y leen el mes en un objeto date respectivamente (lo mismo hay para year, day, hours, minutes, etc&#x2026;)</li>
+</ul>
+</li>
+</ul>
+<pre><code>- [`parse()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)  dado un string, devuelve su timestamp
+
+- [`UTC()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/UTC)  produce un timestamp dados un a&#xF1;o, mes, dia, etc..
+
+- [`toDateString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toDateString)  devuelve el contenido de un objeto date en formato americano
+</code></pre><p>Ejemplo:</p>
+<pre><code class="lang-javascript">&gt;&gt;&gt; <span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+&gt;&gt;&gt; d.toString(); 
+<span class="hljs-string">&quot;Wed Jan 09 2008 00:26:39 GMT-0800 (Pacific Standard Time)&quot;</span>
+&gt;&gt;&gt; d.setMonth(<span class="hljs-number">2</span>); 
+<span class="hljs-number">1205051199562</span>
+&gt;&gt;&gt; d.toString(); 
+<span class="hljs-string">&quot;Sun Mar 09 2008 00:26:39 GMT-0800 (Pacific Standard Time)&quot;</span>
+&gt;&gt;&gt; d.getMonth(); 
+<span class="hljs-number">2</span>
+
+&gt;&gt;&gt; <span class="hljs-built_in">Date</span>.parse(<span class="hljs-string">&apos;Jan 1, 2008&apos;</span>) 
+<span class="hljs-number">1199174400000</span>
+&gt;&gt;&gt; <span class="hljs-built_in">Date</span>.UTC(<span class="hljs-number">2008</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) 
+<span class="hljs-number">1199145600000</span>
+
+&gt;&gt;&gt; <span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2012</span>, <span class="hljs-number">5</span>, <span class="hljs-number">20</span>);
+&gt;&gt;&gt; d.getDay(); 
+<span class="hljs-number">3</span>
+&gt;&gt;&gt; d.toDateString(); 
+<span class="hljs-string">&quot;Wed Jun 20 2012&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../objetos/" class="navigation navigation-prev " aria-label="Previous page: Arrays y Objetos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="arrays/" class="navigation navigation-next " aria-label="Next page: Arrays">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Objetos Globales","level":"1.8","depth":1,"next":{"title":"Arrays","level":"1.8.1","depth":2,"path":"objetos_globales/arrays/README.md","ref":"objetos_globales/arrays/README.md","articles":[]},"previous":{"title":"Arrays y Objetos","level":"1.7","depth":1,"path":"objetos/README.md","ref":"objetos/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-toc","disqus","github","anchorjs","livereload"],"root":"./docs","styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"apuntes-javascript"},"github":{"url":"https://github.com/trainings-juanmaguitar/apuntes-javascript-intermedio"},"livereload":{},"search":{},"position":"top","page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"showByDefault":true,"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{"selector":"h2,h3,h4,h5","icon":"#","placement":"left","visible":"always","class":"custom-class another-one","truncate":64,"ariaLabel":"Anchor"},"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"objetos_globales/README.md","mtime":"2019-01-30T14:52:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-31T09:56:15.660Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

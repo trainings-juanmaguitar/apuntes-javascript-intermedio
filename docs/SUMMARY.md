@@ -9,9 +9,9 @@
 * [Objetos Globales](objetos_globales/README.md)
   * [Arrays](objetos_globales/arrays/README.md)
 * [El entorno del Navegador](entorno_navegador/README.md)
-* [BOM](JSON/README.md)
-* [DOM](AJAX/README.md)
-* [Events](eventos/README.md)
+* [JSON](JSON/README.md)
+* [AJAX](AJAX/README.md)
+* [Eventos](eventos/README.md)
 * [Expresiones Regulares](expresiones_regulares/README.md)
 
 
